@@ -126,6 +126,7 @@ p {
     display: flex;
     text-align: center;
     margin: 0;
+    margin-right: 30px;
 }
 
 .nav .nav-items .nav-link {
@@ -153,7 +154,7 @@ p {
 
 .nav .social {
     padding: 1.4rem 0;
-    margin-left: 30px;
+    margin-left: 13px;
     text-align: center;
 }
 
@@ -279,6 +280,7 @@ main .site-title .btn:hover {
 
 
 /* --------x------ Site title --------x------- */
+
 
 /* --------------- Sidebar ----------------------- */
 

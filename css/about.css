@@ -123,11 +123,11 @@ p {
 .collapse {
     height: 30rem;
 }
-
 .nav .nav-items {
     display: flex;
     text-align: center;
     margin: 0;
+    margin-right: 30px;
 }
 
 .nav .nav-items .nav-link {
@@ -159,8 +159,9 @@ p {
     text-align: center;
 }
 
-.nav .social i {
-    padding: 0 .2rem;
+.nav .social {
+    padding: 1.4rem 0;
+    margin-left: 13px;
     text-align: center;
 }
 
