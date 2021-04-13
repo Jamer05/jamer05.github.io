@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,98 +19,120 @@
     <link rel="stylesheet" href="./css/aos.css">
 
     <!-- Custom Style   -->
+    <script src="./js/scripts.js" defer></script>
     <link rel="stylesheet" href="./css/about.css">
 
 </head>
+
 <body>
 
     <!-- ----------------------------  Navigation ---------------------------------------------- -->
 
-    <nav class="nav">
-        <div class="nav-menu flex-row">
-            <div class="nav-brand">
-                <a href="#" class="text-gray">Jamer</a>
-            </div>
-            <div class="toggle-collapse">
-                <div class="toggle-icons">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-            <div>
-                <ul class="nav-items">
-	
-                    <li class="nav-link">
-                        <a href="./index.html">Home</a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="skills.html">Skills</a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="educ.html">Education</a>
-                    </li>
-	
-                    <li class="nav-link">
-                        <a href="about.html">About-Me</a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="social text-gray">
-                <a href="https://www.facebook.com/jamer055"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://instagram.com/jamer05.touppercase"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/Jamer05"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/hemerson-ramiro-jr-9b64301a2"><i class="fab fa-linkedin"></i></a>
-
-            </div>
-        </div>
-    </nav>
+    <header class="navigation">
+        <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><span class="company-name">Jamer</span></li>
+                <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Education</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Skills</a></li>
+                <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <!-- ------------x-----------s----  Navigation --------------------------x------------------- -->
 
     <!----------------------------- Main Site Section ------------------------------>
 
 
     <main>
-    <!------------------------ Site Title ---------------------->
+        <!------------------------ Site Title ---------------------->
 
-    <section class="about-title">
-        <div class="about-background" data-aos="fade-down" data-aos-delay="100">
-            <h1>About me</h1>
-            <div class="par1" data-aos="fade-up" data-aos-delay="100">
+        <section class="about-title">
+            <div class="about-background" data-aos="fade-down" data-aos-delay="100">
+                <h1>About me</h1>
+                <div class="par1" data-aos="fade-up" data-aos-delay="100">
 
-              <h2><br><img src = "./assets/me.jpg"><br>My name is<strong><em> Hemerson G. Ramiro Jr.</em></strong></h2>
+                    <h2><br><img src="./assets/me.jpg"><br>My name is Hemerson G. Ramiro Jr.</h2>
+                    </strong>
+                    </h2>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!------------x----------- Site Title ----------x----------->
-</main>
+        <!------------x----------- Site Title ----------x----------->
+    </main>
     <!------------------------Site content---------------------->
 
-<!-- -------------------------- Footer ---------------------------------------- -->
+    <!-- -------------------------- Footer ---------------------------------------- -->
 
-<footer class="footer">
-    <div class="rights flex-row">
-        <h4 class="text-gray">
-            Copyright ©2021 <br>All rights reserved
-        </h4>
-    </div>
-</footer>
+    <footer>
 
-<!-- -------------x------------- Footer --------------------x------------------- -->
+        <div class="container-footer-all">
 
-<!-- Jquery Library file -->
-<script src="./js/Jquery3.4.1.min.js"></script>
+            <div class="container-body">
 
-<!-- --------- Owl-Carousel js ------------------->
-<script src="./js/owl.carousel.min.js"></script>
+                <div class="colum1">
+                    <h1>This website is for my project and presentation</h1>
 
-<!-- ------------ AOS js Library  ------------------------- -->
-<script src="./js/aos.js"></script>
+                    <p>I have been honest in building this website and I am not selling it. You can find its source code in my github repository. This is for my project only and I do not sell it for profit </p>
 
-<!-- Custom Javascript file -->
-<script src="./js/main.js"></script>
+                </div>
+
+
+                <div class="colum3">
+
+                    <h1>Information Contacts</h1>
+
+                    <div class="row2">
+                        <img src="icon/house.png">
+                        <label>Gen. Ricarte Llanera Nueva Ecija</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="icon/smartphone.png">
+                        <label>+639777325694</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="icon/contact.png">
+                        <label>jamerkelly09877@gmail.com</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-footer">
+            <div class="footer">
+                <div class="copyright">
+                    © 2021 Hemerson G. Ramiro Jr. | <a href="">Jamer</a>
+                </div>
+
+                <div class="information">
+                    <a href="">Information</a> | <a href="">Privacy Policy</a> | <a href="">All rights reserved</a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
