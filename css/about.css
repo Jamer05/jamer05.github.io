@@ -19,6 +19,8 @@ body {
     --Josefin: 'Josefin', cursive;
     --Lexend: 'Lexend', cursive;
     --Livvic: 'Livvic', cursive;
+    --Teko: 'Teko-Light', cursive;
+    --RobotoCondensed-Light: 'RobotoCondensed-Light', cursive;
     --GloriaHallelujah-Regular: 'GloriaHallelujah-Regular', cursive;
 }
 
@@ -42,11 +44,11 @@ ul {
 }
 
 label {
-    font-family: monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
-    font-family: var(--GloriaHallelujah-Regular);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2.5rem;
 }
 
@@ -368,7 +370,8 @@ main .about-title img {
 }
 
 main .about-title h1 {
-    margin: 1rem;
+    margin-top: 80px;
+    margin-left: 12px;
     color: green;
     border: 2px solid green;
     border-radius: 25px;
@@ -394,7 +397,7 @@ main .about-title .par1 h2 {
     font-family: monospace;
     width: 300px;
     position: relative;
-    height: 500px;
+    height: 400px;
     text-align: center;
 }
 
