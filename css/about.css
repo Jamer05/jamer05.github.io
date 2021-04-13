@@ -61,6 +61,10 @@ h3 {
     font-size: 1.3rem;
 }
 
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 button.btn {
     border: none;
     border-radius: 2rem;
@@ -191,11 +195,14 @@ p {
 }
 
 .company-name {
-    font-family: "Open Sans", Arial, Helvetica, Times, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.5em;
     font-weight: bold;
-    letter-spacing: 3px;
-    color: #f7faff;
+    color: white;
+    border: 3px;
+    border-style: solid;
+    border-color: white;
+    padding: 3px;
     text-transform: uppercase;
 }
 
@@ -358,11 +365,15 @@ main .about-title {
     height: 110vh;
     display: flex;
     justify-content: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main .about-title img {
     border-radius: 50%;
-    border: 10px solid green;
+    border: 3px solid green;
     -webkit-border-radius: 200px;
     -moz-border-radius: 200px;
     height: 100px;
@@ -370,7 +381,7 @@ main .about-title img {
 }
 
 main .about-title h1 {
-    margin-top: 80px;
+    margin-top: 150px;
     margin-left: 12px;
     color: green;
     border: 2px solid green;
@@ -379,6 +390,7 @@ main .about-title h1 {
     font-family: monospace;
     width: 300px;
     text-align: center;
+    color: white;
 }
 
 
@@ -389,9 +401,9 @@ main .about-title h1 {
 
 main .about-title .par1 h2 {
     margin: 1rem;
-    background-color: white;
-    color: green;
-    border: 2px solid black;
+    background-color: transparent;
+    color: white;
+    border: 2px solid green;
     border-radius: 25px;
     color: var(--black);
     font-family: monospace;
@@ -399,6 +411,21 @@ main .about-title .par1 h2 {
     position: relative;
     height: 400px;
     text-align: center;
+}
+
+main .about-title .par1 a {
+    color: white;
+}
+
+main .about-title p {
+    border: 2px solid green;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 150px;
+    font-size: .6em;
+    font-family: var(--Livvic);
+    color: var(--white);
 }
 
 
@@ -532,6 +559,147 @@ footer {
 }
 
 
+/* ----------------- Footer --------------------- */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+footer {
+    width: 100%;
+    background: #202020;
+    color: white;
+}
+
+.container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1 {
+    max-width: 400px;
+}
+
+.colum1 h1 {
+    font-size: 22px;
+}
+
+.colum1 p {
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2 h1 {
+    font-size: 22px;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img {
+    width: 36px;
+    height: 36px;
+}
+
+.row label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3 {
+    max-width: 400px;
+}
+
+.colum3 h1 {
+    font-size: 22px;
+}
+
+.row2 {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img {
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 180px;
+}
+
+.container-footer {
+    width: 100%;
+    background: #101010;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright {
+    color: #C7C7C7;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.move-up {
+    position: relative;
+}
+
+.move-up span {
+    color: var(--midnight);
+    margin-left: 20px;
+}
+
+.move-up span:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.information a {
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+@media screen and (max-width: 1100px) {
+    .container-body {
+        flex-wrap: wrap;
+    }
+    .colum1 {
+        max-width: 100%;
+    }
+    .colum2,
+    .colum3 {
+        margin-top: 40px;
+    }
+}
+
+
 /* ---------x------- Footer ----------x---------- */
 
 
@@ -597,6 +765,9 @@ footer {
         width: 80% !important;
     }
 }
+
+
+/*        x      Viewport less then or equal to 520px       x     */
 
 
 /*        x      Viewport less then or equal to 520px       x     */
