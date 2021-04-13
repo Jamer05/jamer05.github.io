@@ -286,7 +286,7 @@ p {
     position: relative;
     width: 40px;
     height: 5px;
-    background-color: black;
+    background-color: white;
     transition-property: background-color, transform;
     transition-duration: 0.5s;
 }
@@ -298,7 +298,7 @@ p {
     width: 40px;
     height: 5px;
     position: absolute;
-    background: black;
+    background: white;
     transition-property: margin, transform;
     transition-duration: 0.5s;
 }
