@@ -330,7 +330,7 @@ p {
 }
 
 .nav.scrolled {
-    background: #6bb0ff;
+    background: green;
     transition: background 0.5s ease-in-out;
     -webkit-box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.62);
     -moz-box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.62);
