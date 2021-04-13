@@ -270,7 +270,7 @@ p {
         margin: 0;
         padding: 10px;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     .nav__link {
         opacity: 0;
