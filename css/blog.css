@@ -272,7 +272,7 @@ p {
 main .site-title {
     background: url('../assets/JamerBackground.png');
     background-size: cover;
-    height: 110vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     background-attachment: fixed;
@@ -378,6 +378,7 @@ main .post-content .post-title a {
 
 .site-content .post-content .post-title .post-btn {
     border-radius: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: .7rem 1.5rem;
     background: green;
     color: white;

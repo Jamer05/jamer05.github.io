@@ -272,7 +272,7 @@ p {
 main .site-title {
     background: url('../assets/JamerBackground.png');
     background-size: cover;
-    height: 110vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     background-attachment: fixed;
