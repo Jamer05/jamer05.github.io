@@ -404,7 +404,6 @@ main .about-title .par1 h2 {
     background-color: transparent;
     color: white;
     border: 2px solid green;
-    border-radius: 25px;
     color: var(--black);
     font-family: monospace;
     width: 300px;
