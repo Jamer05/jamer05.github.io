@@ -453,29 +453,6 @@ main .post-content .post-title a {
     font-size: 1rem;
 }
 
-.site-content .sidebar .newsletter {
-    padding-top: 10rem;
-}
-
-.site-content .sidebar .newsletter .form-element {
-    padding: .5rem 2rem;
-}
-
-.site-content .sidebar .newsletter .input-element {
-    width: 80%;
-    height: 1.9rem;
-    padding: .3rem .5rem;
-    font-family: var(--Lexend);
-    font-size: 1rem;
-}
-
-.site-content .sidebar .newsletter .form-btn {
-    border-radius: 0;
-    padding: .8rem 32%;
-    margin: 1rem 0;
-    background: var(--sky);
-}
-
 .site-content .sidebar .popular-tags {
     padding: 5rem 0;
 }
