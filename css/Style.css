@@ -24,7 +24,7 @@ body {
 }
 
 
-/* ---------------- Global Classes ---------------*/
+/* Global Classes*/
 
 a {
     text-decoration: none;
@@ -65,7 +65,7 @@ button.btn {
     border-radius: 2rem;
     padding: 1rem 3rem;
     font-size: 1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     cursor: pointer;
 }
 
@@ -87,97 +87,10 @@ p {
 }
 
 
-/* ------x------- Global Classes -------x-------*/
+/* Global Classes*/
 
 
-/* --------------- navbar ----------------- */
-
-
-/*
-.nav {
-    background: white;
-    padding: 0 2rem;
-    height: 0rem;
-    min-height: 10vh;
-    overflow: hidden;
-    transition: height 1s ease-in-out;
-}
-
-.nav .nav-menu {
-    justify-content: space-between;
-}
-
-.nav .toggle-collapse {
-    position: absolute;
-    top: 0%;
-    width: 90%;
-    cursor: pointer;
-    display: none;
-}
-
-.nav .toggle-collapse .toggle-icons {
-    display: flex;
-    justify-content: flex-end;
-    text-align: center;
-    padding: 1.7rem 0;
-}
-
-.nav .toggle-collapse .toggle-icons i {
-    font-size: 1.4rem;
-    color: var(--text-gray);
-}
-
-.collapse {
-    height: 30rem;
-}
-
-.nav .nav-items {
-    display: flex;
-    text-align: center;
-    margin: 0;
-    margin-right: 30px;
-}
-
-.nav .nav-items .nav-link {
-    padding: 1.6rem 1rem;
-    font-size: 1.1rem;
-    font-family: var(--Abel);
-    font-size: 1.1rem;
-}
-
-.nav .nav-items .nav-link:hover {
-    background-color: green;
-}
-
-.nav .nav-items .nav-link:hover a {
-    color: var(--white);
-}
-
-.nav .nav-brand a {
-    font-size: 1.6rem;
-    padding: 1rem 0;
-    display: block;
-    font-family: var(--Lexend);
-    font-size: 1.6rem;
-}
-
-.nav .social {
-    padding: 1.4rem 0;
-    margin-left: 13px;
-    text-align: center;
-}
-
-.nav .social i {
-    padding: 0 .2rem;
-    text-align: center;
-}
-
-.nav .social i:hover {
-    color: green;
-    text-align: center;
-}
-
-*/
+/* nav bar*/
 
 .nav {
     position: fixed;
@@ -350,13 +263,13 @@ p {
 }
 
 
-/* -------x------- navbar ---------x------- */
+/* Nav bar*/
 
 
-/* ----------------- Main Content----------- */
+/* Main Content*/
 
 
-/* --------------- Site title ---------------- */
+/* Site title*/
 
 main .site-title {
     background: url('../assets/JamerBackground.png');
@@ -433,7 +346,7 @@ main .site-title .site-background {
         top: 0px;
     }
     25% {
-        bottom: : 500px;
+        bottom: 500px;
         top: 0px;
     }
     50% {
@@ -495,10 +408,10 @@ main .site-title .btn:hover {
 }
 
 
-/* --------x------ Site title --------x------- */
+/* Side title*/
 
 
-/* --------------- Sidebar ----------------------- */
+/* Side Bar*/
 
 .site-content>.sidebar .category-list {
     font-family: var(--Livvic);
@@ -573,13 +486,13 @@ main .site-title .btn:hover {
 }
 
 
-/* -------x------- Sidebar -----------x----------- */
+/* Side Bar*/
 
 
-/* ---------x------- Main Content -----x----- */
+/* Main Content*/
 
 
-/* ----------------- Footer --------------------- */
+/* Footer*/
 
 * {
     margin: 0px;
@@ -720,10 +633,10 @@ footer {
 }
 
 
-/* ---------x------- Footer ----------x---------- */
+/* Footer*/
 
 
-/*              Viewport less then or equal to 1130px            */
+/*  Viewport less then or equal to 1130px  */
 
 @media only screen and (max-width: 1130px) {
     .site-content .post-content>.post-image .post-info {
@@ -740,10 +653,10 @@ footer {
 }
 
 
-/*      x       Viewport less then or equal to 1130px    x     */
+/* Viewport less then or equal to 1130px*/
 
 
-/*              Viewport less then or equal to 750px            */
+/* Viewport less then or equal to 750px */
 
 @media only screen and (max-width: 750px) {
     .nav .nav-menu,
@@ -762,10 +675,10 @@ footer {
 }
 
 
-/*        x      Viewport less then or equal to 750px       x     */
+/*  Viewport less then or equal to 750px*/
 
 
-/*              Viewport less then or equal to 520px            */
+/* Viewport less then or equal to 520px  */
 
 @media only screen and (max-width: 520px) {
     main .blog {
@@ -787,4 +700,4 @@ footer {
 }
 
 
-/*        x      Viewport less then or equal to 520px       x     */
+/* Viewport less then or equal to 520px  */
