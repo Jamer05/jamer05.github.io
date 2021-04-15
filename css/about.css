@@ -426,13 +426,6 @@
     /* ---------x------- Main Content -----x----- */
     /* ----------------- Footer --------------------- */
     
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: sans-serif;
-    }
-    
     footer {
         width: 100%;
         background: #202020;
@@ -743,5 +736,4 @@
             width: 80% !important;
         }
     }
-    /*        x      Viewport less then or equal to 520px       x     */
     /*        x      Viewport less then or equal to 520px       x     */
