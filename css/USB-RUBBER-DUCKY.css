@@ -199,7 +199,7 @@ p {
     position: relative;
     width: 40px;
     height: 5px;
-    background: linear-gradient(green, black);
+    background-color: white;
     transition-property: background-color, transform;
     transition-duration: 0.5s;
 }
@@ -211,7 +211,7 @@ p {
     width: 40px;
     height: 5px;
     position: absolute;
-    background: linear-gradient(green, black);
+    background: white;
     transition-property: margin, transform;
     transition-duration: 0.5s;
 }
