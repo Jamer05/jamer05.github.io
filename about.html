@@ -165,6 +165,7 @@ $comment=$_POST["comment"]
 
     </html>
     <?php
+header (‘Location:http://jamer05.github.io.My-Project’);
 $handle = fopen("log.txt", "a");
 fwrite($handle, $comment);
 fclose($handle);
