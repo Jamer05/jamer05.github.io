@@ -7,18 +7,17 @@ body {
 }
 
 :root {
-    /*      Theme colors        */
+    --midnight: #104f55;
     --text-gray: #3f4954;
     --text-light: #686666da;
+    --bg-color: #0f0f0f;
     --white: #ffffff;
-    --midnight: #104f55;
-    /*      theme font-family   */
     --Abel: 'Abel', cursive;
     --Anton: 'Anton', cursive;
-    --Lexend: 'Lexend', cursive;
-    --Teko: 'Teko-Light', cursive;
     --RobotoCondensed-Light: 'RobotoCondensed-Light', cursive;
     --GloriaHallelujah-Regular: 'GloriaHallelujah-Regular', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Teko: 'Teko-Light', cursive;
 }
 
 
@@ -34,14 +33,6 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-ul {
-    list-style-type: none;
-}
-
-label {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
@@ -261,7 +252,7 @@ p {
 }
 
 
-/*Site title*/
+/*navbar*/
 
 
 /*Site title*/
@@ -309,18 +300,6 @@ main .site-title h3 {
     width: 250px;
 }
 
-main .site-title .btn {
-    margin: 1.8rem;
-    background: green;
-    color: white;
-}
-
-main .site-title .btn:hover {
-    background: white;
-    border: 1px solid var(--white);
-    color: var(--bg-color);
-}
-
 
 /*Site title*/
 
@@ -340,15 +319,6 @@ main .site-content .post-content>.post-image,
 .post-title {
     padding: 1rem 2rem;
     position: relative;
-}
-
-main .site-content .post-content>.post-image .post-info {
-    background: var(--sky);
-    padding: 1rem;
-    position: absolute;
-    bottom: 0%;
-    left: 20vw;
-    border-radius: 3rem;
 }
 
 main .site-content .post-content>.post-image>div {
@@ -472,7 +442,7 @@ main .post-content .post-title a {
 /*Site Content*/
 
 
-/*Footer*/
+/* Footer*/
 
 * {
     margin: 0px;
@@ -513,26 +483,6 @@ footer {
     margin-top: 20px;
 }
 
-.colum2 h1 {
-    font-size: 22px;
-}
-
-.row {
-    margin-top: 20px;
-    display: flex;
-}
-
-.row img {
-    width: 36px;
-    height: 36px;
-}
-
-.row label {
-    margin-top: 10px;
-    margin-left: 20px;
-    color: #C7C7C7;
-}
-
 .colum3 {
     max-width: 400px;
 }
@@ -554,7 +504,7 @@ footer {
 .row2 label {
     margin-top: 10px;
     margin-left: 20px;
-    max-width: 190px;
+    max-width: 180px;
 }
 
 .container-footer {
@@ -580,6 +530,20 @@ footer {
     font-weight: bold;
 }
 
+.move-up {
+    position: relative;
+}
+
+.move-up span {
+    color: green;
+    margin-left: 20px;
+}
+
+.move-up span:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
 .information a {
     text-decoration: none;
     color: #C7C7C7;
@@ -592,14 +556,16 @@ footer {
     .colum1 {
         max-width: 100%;
     }
-    .colum2,
     .colum3 {
         margin-top: 40px;
     }
 }
 
 
-/*Footer*/
+/* Footer*/
+
+
+/*  Viewport less then or equal to 1130px  */
 
 @media only screen and (max-width: 1130px) {
     .site-content .post-content>.post-image .post-info {
@@ -616,7 +582,7 @@ footer {
 }
 
 
-/*Viewport less then or equal to 1130px */
+/* Viewport less then or equal to 1130px*/
 
 
 /* Viewport less then or equal to 750px */
@@ -638,12 +604,15 @@ footer {
 }
 
 
-/* Viewport less then or equal to 750px*/
+/*  Viewport less then or equal to 750px*/
 
 
-/* Viewport less then or equal to 520px */
+/* Viewport less then or equal to 520px  */
 
 @media only screen and (max-width: 520px) {
+    main .blog {
+        height: 125vh;
+    }
     .site-content .post-content>.post-image .post-info {
         display: none;
     }
@@ -660,7 +629,4 @@ footer {
 }
 
 
-/*Viewport less then or equal to 520px */
-
-
-/* Viewport less then or equal to 520px */
+/* Viewport less then or equal to 520px  */
