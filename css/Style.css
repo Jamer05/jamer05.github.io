@@ -285,7 +285,7 @@ p {
     position: relative;
     width: 40px;
     height: 5px;
-    background-color: white;
+    background: linear-gradient(green, black);
     transition-property: background-color, transform;
     transition-duration: 0.5s;
 }
@@ -297,7 +297,7 @@ p {
     width: 40px;
     height: 5px;
     position: absolute;
-    background: white;
+    background: linear-gradient(green, black);
     transition-property: margin, transform;
     transition-duration: 0.5s;
 }
@@ -392,27 +392,30 @@ main .site-title .site-background {
     color: white;
     animation: rotation 2s alternate;
 }
+
 @keyframes rotation {
-  from {
-    transform: rotate(719deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+    from {
+        transform: rotate(719deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }
 
 .site-title .site-background h1 {
     color: white;
     animation: rotation1 2s alternate;
 }
+
 @keyframes rotation1 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(719deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(719deg);
+    }
 }
+
 .site-title .site-background img {
     background: red;
     position: relative;
