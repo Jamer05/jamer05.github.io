@@ -7,10 +7,8 @@ body {
 }
 
 :root {
-    --midnight: #104f55;
     --text-gray: #3f4954;
     --text-light: #686666da;
-    --bg-color: #0f0f0f;
     --white: #ffffff;
     --Abel: 'Abel', cursive;
     --Anton: 'Anton', cursive;
@@ -95,7 +93,7 @@ p {
     background-color: #292f36;
 }
 
-.company-name {
+.my-name {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.5em;
     font-weight: bold;
@@ -180,6 +178,10 @@ p {
 
 .nav--active .nav__trigger {
     opacity: 0.5;
+}
+
+.nav--active .nav__list {
+    margin-top: 80px;
 }
 
 .nav__icon {

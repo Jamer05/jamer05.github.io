@@ -7,12 +7,7 @@ body {
 }
 
  :root {
-    /*      Theme colors        */
-    --text-gray: #3f4954;
-    --text-light: #686666da;
-    --bg-color: #0f0f0f;
     --white: #ffffff;
-    --midnight: #104f55;
     /*      theme font-family   */
     --Abel: 'Abel', cursive;
     --Anton: 'Anton', cursive;
@@ -33,53 +28,13 @@ a {
     font-family: var(--Livvic);
 }
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-ul {
-    list-style-type: none;
-}
-
-label {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2.5rem;
 }
 
-h3 {
-    font-family: var(--Lexend);
-    font-size: 1.3rem;
-}
-
 p {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-button.btn {
-    border: none;
-    border-radius: 2rem;
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    font-family: var(--GloriaHallelujah-Regular);
-    cursor: pointer;
-}
-
-span {
-    font-family: var(--Abel);
-}
-
-.container {
-    margin: 0 5vw;
-}
-
-.text-gray {
-    color: var(--text-gray);
 }
 
 p {
@@ -188,6 +143,10 @@ p {
 
 .nav--active .nav__trigger {
     opacity: 0.5;
+}
+
+.nav--active .nav__list {
+    margin-top: 80px;
 }
 
 .nav__icon {
@@ -359,126 +318,6 @@ main .about-title p {
 
 /* Footer*/
 
-footer {
-    width: 100%;
-    background: #202020;
-    color: white;
-}
-
-.container-footer-all {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px;
-}
-
-.container-body {
-    display: flex;
-    justify-content: space-between;
-}
-
-.colum1 {
-    max-width: 400px;
-}
-
-.colum1 h1 {
-    font-size: 22px;
-}
-
-.colum1 p {
-    font-size: 14px;
-    color: #C7C7C7;
-    margin-top: 20px;
-}
-
-.colum2 h1 {
-    font-size: 22px;
-}
-
-.row {
-    margin-top: 20px;
-    display: flex;
-}
-
-.row img {
-    width: 36px;
-    height: 36px;
-}
-
-.row label {
-    margin-top: 10px;
-    margin-left: 20px;
-    color: #C7C7C7;
-}
-
-.colum3 {
-    max-width: 400px;
-}
-
-.colum3 h1 {
-    font-size: 22px;
-}
-
-.row2 {
-    margin-top: 20px;
-    display: flex;
-}
-
-.row2 img {
-    width: 36px;
-    height: 36px;
-}
-
-.row2 label {
-    margin-top: 10px;
-    margin-left: 20px;
-    max-width: 190px;
-}
-
-.container-footer {
-    width: 100%;
-    background: #101010;
-}
-
-.footer {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.copyright {
-    color: #C7C7C7;
-}
-
-.copyright a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.information a {
-    text-decoration: none;
-    color: #C7C7C7;
-}
-
-@media screen and (max-width: 1100px) {
-    .container-body {
-        flex-wrap: wrap;
-    }
-    .colum1 {
-        max-width: 100%;
-    }
-    .colum2,
-    .colum3 {
-        margin-top: 40px;
-    }
-}
-
-
-/* Footer*/
-
 * {
     margin: 0px;
     padding: 0px;
@@ -600,26 +439,6 @@ footer {
 /* Footer*/
 
 
-/*  Viewport less then or equal to 1130px  */
-
-@media only screen and (max-width: 1130px) {
-    .site-content .post-content>.post-image .post-info {
-        left: 2rem !important;
-        bottom: 1.2rem !important;
-        border-radius: 0% !important;
-    }
-    .site-content .sidebar .popular-post .post-info {
-        display: none !important;
-    }
-    footer.footer .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/* Viewport less then or equal to 1130px*/
-
-
 /* Viewport less then or equal to 750px */
 
 @media only screen and (max-width: 750px) {
@@ -640,28 +459,3 @@ footer {
 
 
 /*  Viewport less then or equal to 750px*/
-
-
-/* Viewport less then or equal to 520px  */
-
-@media only screen and (max-width: 520px) {
-    main .blog {
-        height: 125vh;
-    }
-    .site-content .post-content>.post-image .post-info {
-        display: none;
-    }
-    footer.footer .container>div {
-        padding: 1rem .9rem !important;
-    }
-    footer .rights {
-        padding: 0 1.4rem;
-        text-align: center;
-    }
-    nav .toggle-collapse {
-        width: 80% !important;
-    }
-}
-
-
-/* Viewport less then or equal to 520px  */

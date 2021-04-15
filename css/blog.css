@@ -12,7 +12,6 @@ body {
     --text-light: #686666da;
     --bg-color: #0f0f0f;
     --white: #ffffff;
-    --midnight: #104f55;
     /*      theme font-family   */
     --Abel: 'Abel', cursive;
     --True-Lies: 'True-Lies', cursive;
@@ -36,14 +35,6 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-ul {
-    list-style-type: none;
-}
-
-label {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
@@ -117,6 +108,10 @@ p {
 .nav--active .nav {
     opacity: 1;
     background: #292f36;
+}
+
+.nav--active .nav__list {
+    margin-top: 80px;
 }
 
 .nav__list {
@@ -347,25 +342,6 @@ main .post-content .post-title a {
     color: white;
 }
 
-.site-content .pagination {
-    justify-content: center;
-    color: var(--text-gray);
-    margin: 4rem 0;
-}
-
-.site-content .pagination a {
-    padding: .6rem .9rem;
-    border-radius: 2rem;
-    margin: 0 .3rem;
-    font-family: var(--Lexend);
-}
-
-.site-content .pagination .pages {
-    background: var(--text-gray);
-    background-color: green;
-    color: var(--white);
-}
-
 
 /*Site Content*/
 
@@ -431,9 +407,6 @@ main .post-content .post-title a {
     border-radius: 3rem;
     margin: .4rem .6rem;
 }
-
-
-/*Side Bar*/
 
 
 /*Site Content*/
@@ -562,7 +535,7 @@ footer {
 /* Footer*/
 
 
-/*              Viewport less then or equal to 1130px            */
+/*Viewport less then or equal to 1130px            */
 
 @media only screen and (max-width: 1130px) {
     .site-content .post-content>.post-image .post-info {
@@ -602,25 +575,6 @@ footer {
 
 
 /*  Viewport less then or equal to 750px*/
-
-
-/* Viewport less then or equal to 520px  */
-
-@media only screen and (max-width: 520px) {
-    .site-content .post-content>.post-image .post-info {
-        display: none;
-    }
-    footer.footer .container>div {
-        padding: 1rem .9rem !important;
-    }
-    footer .rights {
-        padding: 0 1.4rem;
-        text-align: center;
-    }
-    nav .toggle-collapse {
-        width: 80% !important;
-    }
-}
 
 
 /* Viewport less then or equal to 520px  */
