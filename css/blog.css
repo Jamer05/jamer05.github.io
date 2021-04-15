@@ -457,6 +457,10 @@ main .post-content .post-title a {
     padding: 5rem 0;
 }
 
+.site-content .sidebar .popular-tags h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .site-content .sidebar .popular-tags .tags .tag {
     background: green;
     color: white;
