@@ -276,7 +276,7 @@
         position: relative;
         width: 40px;
         height: 5px;
-        background-color: white;
+        background: linear-gradient(green, black);
         transition-property: background-color, transform;
         transition-duration: 0.5s;
     }
@@ -288,7 +288,7 @@
         width: 40px;
         height: 5px;
         position: absolute;
-        background: white;
+        background: linear-gradient(green, black);
         transition-property: margin, transform;
         transition-duration: 0.5s;
     }
