@@ -390,13 +390,6 @@ main .site-title .btn:hover {
     color: #ddd;
 }
 
-.border {
-    width: 200px;
-    height: 10px;
-    background: green;
-    margin: 40px auto;
-}
-
 .contact-form {
     max-width: 600px;
     margin: auto;
@@ -427,11 +420,11 @@ textarea.contact-form-text {
 }
 
 .contact-form-btn {
-    float: right;
     border: 0;
     background: green;
     color: #fff;
     padding: 12px 50px;
+    width: 100%;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.5s;
