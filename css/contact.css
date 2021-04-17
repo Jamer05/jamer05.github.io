@@ -7,10 +7,8 @@ body {
 }
 
 :root {
-    /*      Theme colors        */
     --white: #ffffff;
     --midnight: #104f55;
-    /*      theme font-family   */
     --Abel: 'Abel', cursive;
     --True-Lies: 'True-Lies', cursive;
     --Anton: 'Anton', cursive;
@@ -87,6 +85,10 @@ p {
 .nav--active .nav {
     opacity: 1;
     background: #292f36;
+}
+
+.nav--active .nav__list {
+    margin-top: 80px;
 }
 
 .nav__list {
@@ -199,10 +201,6 @@ p {
 
 .nav--active .nav__link {
     opacity: 1;
-}
-
-.nav--active .nav__list {
-    margin-top: 80px;
 }
 
 .nav--active .nav {

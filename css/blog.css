@@ -7,12 +7,8 @@ body {
 }
 
 :root {
-    /*      Theme colors        */
-    --text-gray: #3f4954;
-    --text-light: #686666da;
-    --bg-color: #0f0f0f;
     --white: #ffffff;
-    /*      theme font-family   */
+    --midnight: #104f55;
     --Abel: 'Abel', cursive;
     --True-Lies: 'True-Lies', cursive;
     --Anton: 'Anton', cursive;
