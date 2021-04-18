@@ -19,7 +19,7 @@ body {
 }
 
 
-/* Global Classes*/
+/*Gloabal Classes*/
 
 a {
     text-decoration: none;
@@ -34,17 +34,21 @@ a {
 }
 
 h1 {
-    font-family: var(--Livvic);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2.5rem;
 }
 
 h2 {
-    font-family: var(--Lexend);
+    font-family: var(--GloriaHallelujah-Regular);
 }
 
 h3 {
-    font-family: var(--TrueLays);
+    font-family: var(--Lexend);
     font-size: 1.3rem;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 button.btn {
@@ -52,7 +56,7 @@ button.btn {
     border-radius: 2rem;
     padding: 1rem 3rem;
     font-size: 1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--GloriaHallelujah-Regular);
     cursor: pointer;
 }
 
@@ -74,10 +78,10 @@ p {
 }
 
 
-/* Global Classes*/
+/*Gloabal Classes*/
 
 
-/* nav bar*/
+/*Navbar*/
 
 .nav {
     position: fixed;
@@ -106,10 +110,6 @@ p {
     background: #292f36;
 }
 
-.nav--active .nav__list {
-    margin-top: 80px;
-}
-
 .nav__list {
     display: flex;
     align-items: baseline;
@@ -121,10 +121,6 @@ p {
 
 .nav__item {
     list-style-type: none;
-}
-
-.nav .nav__item:hover {
-    color: var(--white);
 }
 
 .nav__link {
@@ -182,6 +178,10 @@ p {
 
 .nav--active .nav__trigger {
     opacity: 0.5;
+}
+
+.nav--active .nav__list {
+    margin-top: 80px;
 }
 
 .nav__icon {
@@ -243,7 +243,7 @@ p {
 
 .nav.scrolled {
     background: green;
-    transition: 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out;
     -webkit-box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.62);
     -moz-box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.62);
     box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.62);
@@ -254,7 +254,7 @@ p {
 }
 
 
-/* Nav bar*/
+/*navbar*/
 
 
 /*Site title*/
@@ -285,6 +285,21 @@ main .site-title h1 {
     to {
         transform: rotate(359deg);
     }
+}
+
+main .site-title img {
+    height: 100px;
+    width: 100px;
+    margin-left: 70px;
+}
+
+main .site-title h3 {
+    margin: 1rem;
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 25px;
+    color: var(--black);
+    width: 250px;
 }
 
 
@@ -332,10 +347,28 @@ main .post-content .post-title a {
 
 .site-content .post-content .post-title .post-btn {
     border-radius: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: .7rem 1.5rem;
     background: green;
     color: white;
+}
+
+.site-content .pagination {
+    justify-content: center;
+    color: var(--text-gray);
+    margin: 4rem 0;
+}
+
+.site-content .pagination a {
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0 .3rem;
+    font-family: var(--Lexend);
+}
+
+.site-content .pagination .pages {
+    background: var(--text-gray);
+    background-color: green;
+    color: var(--white);
 }
 
 
@@ -360,7 +393,7 @@ main .post-content .post-title a {
     margin: .8rem 0;
     padding: .4rem 1rem;
     border-radius: 3rem;
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -405,6 +438,9 @@ main .post-content .post-title a {
     border-radius: 3rem;
     margin: .4rem .6rem;
 }
+
+
+/*Side Bar*/
 
 
 /*Site Content*/
@@ -533,7 +569,7 @@ footer {
 /* Footer*/
 
 
-/*Viewport less then or equal to 1130px            */
+/*  Viewport less then or equal to 1130px  */
 
 @media only screen and (max-width: 1130px) {
     .site-content .post-content>.post-image .post-info {
@@ -573,6 +609,28 @@ footer {
 
 
 /*  Viewport less then or equal to 750px*/
+
+
+/* Viewport less then or equal to 520px  */
+
+@media only screen and (max-width: 520px) {
+    main .blog {
+        height: 125vh;
+    }
+    .site-content .post-content>.post-image .post-info {
+        display: none;
+    }
+    footer.footer .container>div {
+        padding: 1rem .9rem !important;
+    }
+    footer .rights {
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+    nav .toggle-collapse {
+        width: 80% !important;
+    }
+}
 
 
 /* Viewport less then or equal to 520px  */
