@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../assets/JamerBackground.png">
+    <title>Jamer</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <script src="./js/scripts.js" defer></script>
+    <link rel="stylesheet" href="./css/Termux.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="navigation">
+        <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><span class="my-name">Jamer</span></li>
+                <li class="nav__item"><a class="nav__link" href="../../../index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="../../../blog.html">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="../../../contact.html">Contact</a></li>
+                <li class="nav__item"><a class="nav__link" href="../../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!--  Site title -->
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                <h1>Termux</h1>
+
+            </div>
+        </section>
+
+        <!--  Site title -->
+
+        <!--  Site Content -->
+        <section class="container">
+            <div class="site-content">
+                <div class="posts">
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/Termux.png" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a>Termux !! Full Tutorial With Termux commands</a>
+                            <p>Learn Termux for hacking !! first, understand what is Termux and follow how to install applications using Termux and the complete Termux command. In this article, I am going to give you detailed information and everything that
+                                you need to know about Termux. So Let’s get started.</p>
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                What is Termux?
+                            </a>
+                            <br>
+                            <p>What is Termux? Basically, Termux is a terminal emulator application for Android as well as a Linux environment that runs on Android without the need for rooting or special settings. Additional applications/packages are also
+                                available and can be installed using the APT package manager.
+                            </p>
+
+                            <p>What distinguishes Termux from other terminal emulators is that Termux has set up such a way that the environment on Termux is the same as the Debian standard Linux environment. Because the Android environment is different
+                                from the Linux environment in general so that in Thermux we can install packages/applications commonly used on Linux in general. With features and environment adjustments like the above makes Termux very special because
+                                you can install Penetration Testing Tools (pen-testing tool) / hacking applications such as Metasploit and net hunter times on your Android phone using Termux.
+                            </p>
+                            <p>Termux also provides a package manager (APT) to make it easier for you to find and install the packages needed from the software repository that Termux provides.</p>
+                            <br>
+                            <hr>
+                            <p>In a Linux distribution, a “package” refers to a compressed file archive that contains all the files that make up a particular application. The files are usually stored in packages according to the existing installation path.
+                                Common types of Linux packages such as .deb, .rpm, and .tgz</p>
+                            <br><br>
+
+                            <a href="setup">Android is Linux</a>
+                            <p>We are getting to know Android first, which is your operating system to run the TERMUX application. Android is a Linux-based operating system that is made for touch screen devices and handheld devices such as the cellphone
+                                that you are currently using. Android is made and developed by Google, Android is made from modifying the Linux kernel and other opensource applications. This variant of Android is also used on other types of mobile devices
+                                such as game consoles, digital cameras, attendance machines, smart TVs, and other electronic devices.</p>
+
+                            <br>
+                            <hr>
+                            <p> So the Android cellphone that you currently hold is a Linux. Linux is famous for its powerful reputation, OS server, internet life, and hacking.</p>
+                            <br>
+                            <br>
+                            <a href="setup">Termux is a terminal emulator application</a>
+                            <br>
+                            <p>A terminal emulator is an application that provides a text-based interface (CLI) to access the shell To make it easier to access the Linux shell (Shell CLI) from the GUI, a terminal emulator is created, with the terminal emulator
+                                you can access the console shell from the GUI shell you are currently using, so it’s easier. Termux is a terminal emulator for Android that allows users to access your Android Linux shell from the GUI.</p>
+                            <br>
+                            <br>
+                            <a href="setup">Termux provides Linux environment</a>
+                            <br>
+                            <p>The environment variable is the name of an object that contains data used by one or more applications. In short, this is a variable with a name and value. The contents of the name of this variable can contain information on
+                                environment definitions in the system, for example, the location of executable files and file settings in a system, the default editor that must be used, or the local system settings. Laymen might think this is not important,
+                                but this variable environment provides a fast and simple way to share settings/configurations of applications and processes on Linux. Linux distro environment, in general, is different from the android environment, running
+                                Linux applications in different environments will cause errors, very basic differences between general Linux and android include:
+                            </p>
+                            <br>
+                            <br>
+                            <ul>
+                                <li>
+                                    <p>Public folders such as / bin, / etc, / usr, / tmp and / var do not exist.</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        The android directory structure does not follow the standard rules of the Linux directory structure in general. For example, in general, Linux binary files exist in / bin while in android/system/bin.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>In the standard / general Linux folder ($ HOME) is created for each user in / home/username (multi-user), while in the android folder ($ HOME) is in the subdirectory of the application, so each application has its own
+                                        folder ($ HOME) -alone. So avoid storing important data in the folder ($ HOME) when using TERMUX, because this folder will be deleted if TERMUX is uninstalled.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p> Termux installs the package in the directory based on the $PREFIXenvironment variable definition (example: binaries are in $PREFIX/bin, and configuration files $PREFIX/etc). To view the contents of the $ PREFIX variable
+                                        you can type echo $ PREFIX in your TERMUX terminal.
+                                    </p>
+
+                                </li>
+                                <li>
+                                    <p>Shared libraries are installed at $ PREFIX/lib, which has been defined in the $ LD_LIBRARY_PATH variable. This might clash with the Android system binaries in / system/bin, which can force LD_LIBRARY_PATH to be removed
+                                        before running the system binaries.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p> In addition to the different android file systems with Linux in general, TERMUX is run by a single user without root access (Each android application is run by the user himself), so running Linux commands on TERMUX
+                                        will not affect other applications.
+                                    </p>
+                                </li>
+                            </ul>
+                            <br>
+                            <br>
+                            <hr>
+                            <p>Running an application using a non-root user causes ports below 1024 to be unusable (to be able to use ports under 1024 on Linux it must be with the root user). As a solution, many packages have been configured to use port
+                                values ​​above 1024 as default values ​​in the Android environment.</p>
+                            <br>
+                            <br>
+                            <a href="setup">Access shell linux with Termux</a>
+                            <br>
+                            <br>
+                            <p>A shell is an interface used by users to interact with the operating system, generally a shell in the form of a Command-Line Interface (CLI) or a Graphical User Interface (GUI). The type of shell that you use on your Android
+                                Linux mobile every day is a GUI shell because with a GUI shell everyone can use it easily. While the intended shell on Linux is a Shell in the Command-Line Interface (CLI) version, not a GUI, even though Linux already has
+                                a desktop/graphics like your android but the desktop version of the GUI is not the shell in question, because if you want to use 100% of Linux potential you must access it through the CLI. When using TERMUX you will access
+                                the CLI shell and are required to type the command/text as the only way to interact with your android Linux through the shell.
+                            </p>
+                            <br>
+                            <br>
+                            <a href="setup">Termux Function</a>
+                            <br>
+                            <br>
+                            <p>The main function of Termux is to access the Linux shell on your Android phone, besides that it also emulates the Debian Linux environment so it feels like you are using a Debian Linux shell when you use Termux. Linux shell
+                                accessed from Termux can be used for several things depending on the needs and skills of its users, for example by programmers/developers used as an environment to test applications that are being developed while by security
+                                experts can be used as platforms or tools and hacking tools that are very portable.
+                            </p>
+                            <br>
+                            <br>
+                            <a href="setup"> Access Android Shell</a>
+                            <br>
+                            <br>
+                            <p>Termux is one of the terminal emulator applications, the main function of Termux is to provide a text-based interface (command-line interface) to access the Android Linux shell from a graphical user interface. What makes Termux
+                                special is that Thermux develops techniques so that standard Linux applications can be installed and run on Android and also provides its own software repository.
+                            </p>
+                            <br>
+                            <br>
+                            <a href="setup">Development and experiment Environments</a>
+                            <br>
+                            <br>
+                            <p>Termux is often used by application developers during the application creation process and is also used to test their applications, with Termux developers will be easier to debug and find the cause of errors in the applications
+                                they try because Termux provides access to the android shell. To support the software developer TERMUX has provided many compilers such as Clang, Rust, Go, etc. and interpreters such as Bash, Perl, Python, etc. You can
+                                check the Termux development environment Wiki
+                            </p>
+                            <br>
+                            <br>
+                            <a href="setup">Hacking tool</a>
+                            <br>
+                            <br>
+                            <p>In the past, if you wanted to hack you had to use a laptop that had a Linux operating system installed, with Termux you can directly use your cell phone as a hacking tool because Android is one of the Linux variants. Termux
+                                provides software repositories, and there are already tools for hacking that you can use to facilitate testing/auditing of security systems such as hydra, Nmap, Metasploit, net hunter times, etc. I do not teach hacking
+                                / cracking whether requested or not. REMEMBER !! Hacking without permission is illegal and can get you jailed. The above tool should be used only to test/audit the system to find security holes/bugs/vulnerabilities and
+                                patch it to improve the security system not to be used for the purpose of damaging or exploiting the system for its own benefit. Be careful with “hacking tutorials using Termux” which are very suspicious where users are
+                                told to install applications/scripts that are unclear which ultimately makes your Android phone that was hacked. Most tutorials like that only clickbait/tricks and will not work in the real world. The smooth hacking tutorial
+                                using TERMUX only forces the user to install malware on your Android phone that can make your Android phone hit or broken.
+                            </p>
+                            <br>
+                            <br>
+                            <a href="setup">Learn to Use Termux Command</a>
+                            <br>
+                            <br>
+                            <p>Termux does not have a GUI display and is just a shell where you have to type the Termux command code to use it, without you memorizing the Termux command code you won’t be able to use Termux. The Termux Command is the same
+                                as the Linux Command. The Termux command is identical to the Linux command especially the Debian family Linux such as Ubuntu or Linux Mint, this is because of the Termux functions as a terminal emulator that accesses the
+                                Linux shell on your android mobile.
+                            </p>
+                            <br>
+                            <br>
+                            <a href="setup">Termux Commands are case sensitive</a>
+                            <br>
+                            <br>
+                            <p>Linux is different from Windows so you have to remember that Linux case is sensitive which means that Linux will look at and treat a letter differently from the letter size (capital or no capital). This treatment applies in
+                                all Linux environments, from naming folders/directories to Linux commands. Examples of writing Termux will be different from Termux, TermuX, TERMUX although read the same but Linux considers it different because of the
+                                size of the letters, not the sound. make sure you type all commands in the lower case format or all commands are written in all lowercase.
+                            </p>
+                            <br>
+                            <br>
+                            <a href="setup">List of Basic Termux Commands</a>
+                            <br>
+                            <br>
+                            <p>Here are the basic Termux commands that you must master when learning to use Termux, this command code is very useful because this Termux code is often used to install, manage applications, files, and folders if you are serious
+                                about learning to hack you should get used to using the Termux command code below :</p>
+                            <br>
+                            <ul>
+                                <li>
+                                    <a>pkg help</a>
+                                    <p>to see the options provided by the TERMUX pkg package manager.</p>
+                                </li>
+                                <li>
+                                    <a>pkg search [package-name]
+                                    </a>
+                                    <p>for packages by name.</p>
+                                </li>
+                                <li>
+                                    <a>pkg install [package-name]</a>
+                                    <p>to install packages.</p>
+                                </li>
+                                <li>
+                                    <a>pkg uninstall [package-name]</a>
+                                    <p>to delete packages.</p>
+                                </li>
+                                <li>
+                                    <a>pkg reinstall [package-name]</a>
+                                    <p>to reinstall packages.</p>
+                                </li>
+                                <li>
+                                    <a>pkg show [package-name]</a>
+                                    <p>to display detailed information about packages.</p>
+                                </li>
+                                <li>
+                                    <a>pkg list installed</a>
+                                    <p>to display the list of packages installed in your Termux.</p>
+                                </li>
+                                <li>
+                                    <a>pkg files</a>
+                                    <p>to view the location of installed files packages.</p>
+                                </li>
+                                <li>
+                                    <a>pkg list-all</a>
+                                    <p>to display all packages provided in the repository.</p>
+                                </li>
+                                <li>
+                                    <a>pkg upgrade </a>
+                                    <p>to update and upgrade packages installed in your Termux.</p>
+                                </li>
+                                <li>
+                                    <a>clear</a>
+                                    <p>This basic command is used to clean the console window.</p>
+                                </li>
+                                <li>
+                                    <a>pwd</a>
+                                    <p>pwd (print working directory), used to see the position of the current directory location.</p>
+                                </li>
+                                <li>
+                                    <a>ls</a>
+                                    <p>used to view/list files and directories. use ls -lha to view detailed information from files and folders.</p>
+                                </li>
+                                <li>
+                                    <a>cp</a>
+                                    <p>Used to copy/copy files and folders.</p>
+                                </li>
+                                <li>
+                                    <a>cd</a>
+                                    <p>Used to navigate/move to another directory that we want, use it cd .to return to the directory level, use it cd ~ to go to the home directory.</p>
+                                </li>
+                                <li>
+                                    <a>mv</a>
+                                    <p>Used To move files and folders or can be used to rename if the file/folder has the same origin and destination.</p>
+                                </li>
+                                <li>
+                                    <a>rm</a>
+                                    <p>Used to delete files. rm -rf namaFolder to delete the folder and its contents.</p>
+                                </li>
+                                <li>
+                                    <a>rmdir</a>
+                                    <p>Used to delete an empty Folder. rmdir –ignore-fail-on-non-empty folder name to delete a non-empty folder.</p>
+                                </li>
+                                <li>
+                                    <a>chmod</a>
+                                    <p>Used to change File / folder permissions / privilege. chmod +x Folder name to change permission to 775 or rwx – x – x.</p>
+                                </li>
+                            </ul>
+                            <br>
+                            <hr>
+                            <br>
+                            <a href="setup">How to hack using Termux</a>
+                            <br>
+                            <br>
+
+                            <p>Termux can be used for a variety of things including as a hacking tool, you can turn your Android phone into a sophisticated hacking tool just by installing the Termux in which the haking tools installed are commonly used by
+                                ethical hackers (professional penetration testers). I have listed some main tools which are used for hacking and penetration testing. You can install these tools on Termux:</p>
+                            <br>
+                            <br>
+                            <ul>
+                                <li>
+                                    <p><b>Metasploit Framework</b>: Metasploit is a very popular hacking tool, with this tool you can create, test, and run an exploit to exploit vulnerabilities on a system as an entry point to take over the system.</p>
+                                </li>
+                                <br>
+                                <li>
+                                    <p>
+                                        <b>Wireshark</b>: Wireshark is an application for analyzing packages in a network. This application is commonly used to analyze networks, troubleshooting networks, developing software and communication protocols
+                                        as well as tools in teaching and learning. You can install the Wireshark application on your android mobile with Termux for hacking purposes, where with this tool you can get a lot of information on a network that
+                                        you want to hack.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <b>Nmap</b>: Nmap is a network scanner application, Nmap is used to find computers and services on a computer network on how to send packets and analyze the responses received. Nmap provides a number of features
+                                        for probing computer networks, including for finding hosts and services and detecting the operating system used. Come hurry up install Nmap on your Android cellphone if you want to scan the network and see who is
+                                        on the same network as you or you want to get information from a host computer. </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <b>Other tools</b>: there are hundreds or even thousands of tools that are made for specific purposes when hacking, so you can find them yourself on the internet hacking tool that suits your needs.</p>
+                                </li>
+                            </ul>
+                            <br>
+                            <hr>
+                            <br>
+                            <a href="setup">FIX storage permission denied Termux</a>
+                            <p>When learning Termux for the first time you will definitely encounter an error “storage permission denied” because Teermux does not have permission to access storage (internal and external storage). To overcome this, make sure
+                                your Termux has been given permission/permission to access SDCard / storage. If you have not run the command, <b>Termux-setup-storage</b> select allow/allow if a dialog popup appears. Or you can go to the settings menu
+                                on your android> application / apps> termux> permissions> slide / check on storage</p>
+                            <br>
+                            <br>
+                            <a href="setup">Conclusion</a>
+                            <br>
+                            <br>
+                            <p>Termux is just an application that is used to access the Linux shell on your Android, Termux is not only used as a hacking tool, more than that it can be used for other purposes according to the user’s computer expertise. it’s
+                                true that with the Termux hacking activities can be more flexible, if in the past hacking people had to bring a laptop that was installed Linux, now you can use the Android cellphone installed with Termux to do hacking
+                                activities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pagination flex-row">
+                        <a href="../../../blog.html" class="pages">Back</a>
+
+                    </div>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="category">
+                        <h2>Category</h2>
+                        <ul class="category-list">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                                <a href="#">Android Tricks</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                                <a href="#">Linux</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                                <a href="#">Windows Tricks</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
+                                <a href="#">Networking</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="popular-post">
+                        <h2>Popular Post</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/blog-site/blog-images/Android-Payload.jpg" class="img" alt="blog1">
+                                </div>
+
+                            </div>
+                            <div class="post-title">
+                                <a href="#">
+                                    Make a Persistent payload in Android Using Kali</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="300">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/blog-site/blog-images/top-DDOS.png" class="img" alt="blog1">
+                                </div>
+
+                            </div>
+                            <div class="post-title">
+                                <a href="#">
+                                    Top DDoS Attack Tools</a>
+                            </div>
+                        </div>
+
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/blog-site/blog-images/slowloris.png" class="img" alt="blog1">
+                                </div>
+
+                            </div>
+                            <div class="post-title">
+                                <a href="#">
+                                    DDoS attack using SlowHTTPTest (Slowloris) in Kali Linux</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="500">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/blog-site/blog-images/SSH.jpg" class="img" alt="blog1">
+                                </div>
+
+                            </div>
+                            <div class="post-title">
+                                <a href="#">
+                                    Use SSH Tunnels to Forward Requests & Access Remote Routers</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/blog-site/blog-images/Termux.png" class="img" alt="blog1">
+                                </div>
+
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Termux !! Full Tutorial With Termux commands</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-tags">
+                        <h2>Popular Tags</h2>
+                        <div class="tags flex-row">
+                            <span class="tag" data-aos="flip-up" data-aos-delay="100">Software</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="200">technology</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="300">Programming</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="400">Designing</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Site Content --->
+
+        <!--  Footer -->
+
+        <footer>
+
+            <div class="container-footer-all ">
+
+                <div class="container-body ">
+
+                    <div class="colum1 ">
+                        <h1>This website is for my project and presentation</h1>
+
+                        <p>I just want to let you know that this website is for my project only at ITWS, I am not selling this because what I am selling is myself. But if you want to see the source code visit my github repository just don't be shy </p>
+
+                    </div>
+
+
+                    <div class="colum3 ">
+
+                        <h1>Information Contacts</h1>
+
+                        <div class="row2 ">
+                            <img src="icon/house.png ">
+                            <label>Gen. Ricarte Llanera Nueva Ecija</label>
+                        </div>
+
+                        <div class="row2 ">
+                            <img src="icon/smartphone.png ">
+                            <label>+639777325694</label>
+                        </div>
+
+                        <div class="row2 ">
+                            <img src="icon/contact.png ">
+                            <label>jamerkelly09877@gmail.com</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container-footer ">
+                <div class="footer ">
+                    <div class="copyright ">
+                        | <a href=" ">© 2021</a>
+                    </div>
+                    <div class="move-up ">
+                        <span><i class="fas fa-arrow-circle-up fa-2x "></i></span>
+                    </div>
+                    <div class="information ">
+
+                        <div class="social text-gray ">
+                            <a href="https://facebook.com/jamer055 "><i class="fab fa-facebook-f "></i></a>
+                            <a href="https://instagram.com/jamer05.touppercase ">&nbsp;&nbsp;<i class="fab fa-instagram "></i></a>
+                            <a href="https://github.com/Jamer05 ">&nbsp;&nbsp;&nbsp;<i class="fab fa-github "></i></a>
+                            <a href="https://www.linkedin.com/in/hemerson-ramiro-jr-9b64301a2">&nbsp;&nbsp;&nbsp;<i class="fab fa-linkedin "></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+
+        </footer>
+
+        <!--  Footer -->
+
+        <!-- Jquery Library file -->
+        <script src="./js/Jquery3.4.1.min.js "></script>
+
+        <!-- Owl-Carousel js-->
+        <script src="./js/owl.carousel.min.js "></script>
+
+        <!-- AOS js Library  -->
+        <script src="./js/aos.js "></script>
+
+        <!-- Custom Javascript file -->
+        <script src="./js/main.js "></script>
+</body>
+
+</html>
