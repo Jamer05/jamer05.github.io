@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/JamerBackground.png">
+    <title>Jamer</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <script src="./js/scripts.js" defer></script>
+    <link rel="stylesheet" href="./css/USB-RUBBER-DUCKY.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="navigation">
+        <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><span class="my-name">Jamer</span></li>
+                <li class="nav__item"><a class="nav__link" href="../../index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="../../blog.html">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="../../contact.html">Contact</a></li>
+                <li class="nav__item"><a class="nav__link" href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!--  Site title -->
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                <h1 style="margin: 30px;">1Turn a Pen Drive into a USB Rubber Ducky</h1>
+
+            </div>
+        </section>
+
+        <!--  Site title -->
+
+        <!--  Site Content -->
+        <section class="container">
+            <div class="site-content">
+                <div class="posts">
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-title">
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                Continuation
+                            </a>
+                            <hr>
+                            <br>
+                            <p>When connected, the USB device is registered, receives an address and sends its descriptor/descriptors to allow the OS to install the necessary drivers and send back the required configuration. After that, the host immediately
+                                starts working with the device. Once the work is completed, the device is de-registered. It is important to note that the devices may have several descriptors, they can also de-register and register as a different device.
+                                If you open the body of a USB flash drive, in addition to the mass storage visible to the user, there is a controller responsible for the above-described actions.
+                            </p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/USB-PATTERN.png" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <br>
+                            <br>
+                            <br>
+                            <a>Bad USB or some history</a>
+                            <hr>
+                            <br>
+                            <p>At the last year’s Black Hat conference, two researchers (Karsten Nohl and Jakob Lell) shared their experience on how to install a personal upgrade to the firmware of the USB flash drive controller. After a while, this USB
+                                flash drive was registered as a keyboard and entered the selected commands. Due to the serious nature of the problem, the guys decided not to make the code for this available. However, soon after, two other researchers
+                                (Adam Caudill and Brandon Wilson) presented to the whole world at Derbycon conference an operable PoC tailored to Phison 2251-03 microcontroller The code is available at GitHub.
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                Transformation
+                            </a>
+                            <hr>
+                            <br>
+                            <p>As you might have guessed, today we will try to turn a regular USB flash drive into a pentester’s secret weapon! First of all, we will need a suitable device. As the code has been uploaded for the specific microcontroller only,
+                                we have two options — either find a USB flash drive managed by this controller, or perform some very challenging work researching and upgrading the firmware of another microcontroller. This time, we will select an easier
+                                way and try to find a suitable USB flash drive (here is the list of vulnerable equipment). The controller is quite popular, so, miraculously, I found a suitable USB flash drive among the dozen I have at home.</p>
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                Starting the magic
+                            </a>
+                            <hr>
+                            <br>
+                            <p>Having found the suitable device (which we won’t miss if it fails), we can start its transformation. First of all, we need to download the sources which the guys made available. Actually, the content is described in detail
+                                on their official wiki page, but, just in case, I will remind you what they have uploaded to GitHub:</p>
+                            <br>
+
+                            <p>
+                                $ DriveCom — an app for communicating with Phison USB flash drives;
+                            </p>
+                            <p>
+                                $ EmbedPayload — an app for embedding Rubber Ducky inject.bin key scripts into custom firmware for subsequent execution when the USB flash drive is connected;
+                            </p>
+                            <p>
+                                $ Injector — an app that extracts addresses from the firmware and embeds the patching code in the firmware;
+                            </p>
+                            <p>
+                                $ firmware — custom 8051 firmware written in C;
+                            </p>
+                            <p>
+                                $ patch — collection of 8051 patches written in C.
+                            </p>
+
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                INFO
+                            </a>
+                            <hr>
+                            <br>
+                            <p>When you use Ducky scripts, you should remember that the DELAY command, which performs a delay for a set number of milliseconds, will work a little differently on the USB flash drive than on Rubber Ducky, so you will have to
+                                adjust the delay time.
+                            </p>
+                            <br>
+                            <br>
+                            <a>Preparing the system</a>
+                            <hr>
+                            <p>Having downloaded the archive with sources from GitHub, you will find that most of them have been written in C# and require compilation, so you will need a studio. Another tool you will need is the Small Device C Compiler,
+                                or SDCC. Install it in C:\Program Files\SDCC, you will need it to compile firmware and patches. Having compiled all the tools contained in the archive, check again if this USB flash drive is suitable for firmware upgrade:
+                            </p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command: <h4>$ DriveCom.exe /drive=F /action=GetInfo</h4>
+                            </a>
+                            <p>where F is the letter of the drive.</p>
+                            <hr>
+                            <br>
+                            <br>
+                            <a>Getting the burner image</a>
+                            <hr>
+                            <p>The next important step is to select an appropriate burner image (8051 binary file, responsible for dumping activities and uploading firmware to the device). They are typically named:
+                            </p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command:<h4>$ BNxxVyyyz.BIN</h4>
+                            </a>
+                            <p>where xx is the controller version (for instance, for PS2251-03 it will be 03), yyy is version number (not important), and z reflects the memory page size and can look like:</p>
+                            <br>
+                            <br>
+                            <p>
+                                $ 2KM — for 2K NAND chips;
+                                <br> $ M — for 8K NAND chips.
+                                <br> $ 4KM — for 4K NAND chips;
+                            </p>
+
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                Dumping the original firmware
+                            </a>
+                            <hr>
+                            <br>
+                            <p>Before commencing your dirty experiments which could kill the USB flash drive, it is strongly recommended to dump the original firmware, so that if something goes wrong you can try to recover the device. First, switch the device
+                                to boot mode:
+                            </p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command: <h4>$ tools\DriveCom.exe /drive=F /action=SendFirmware /burner=BN03V104M.BIN /firmware=hid.bin</h4>
+                            </a>
+                            <br>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>Then, use the DriveCom utility, passing the drive letter, the path to the burner image, and the path to the file where the original dumped firmware will be saved. It will look like this:</p>
+                            <a class="setup">
+                                Command: <h4>$ tools\DriveCom.exe /drive=F /action=SendFirmware /burner=BN03V104M.BIN /firmware=hid.bin</h4>
+                            </a>
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                Alternative options
+                            </a>
+                            <hr>
+                            <br>
+                            <p>In addition to using the HID nature of the USB flash drive and turning it into a keyboard which types our payloads, there are some other tricks that can be done. For instance, you can create a hidden partition on the device,
+                                decreasing the space seen by the OS. To do this, you will first need to determine the number of logical blocks on the device:
+                            </p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command: <h4>$ tools\DriveCom.exe /drive=E /action=GetNumLBAs
+                                </h4>
+                            </a>
+                            <p>Then find the base.c file in the patch folder, uncomment the line #define FEATURE_EXPOSE_HIDDEN_PARTITION and add another directive — define, which sets a new LBA number: #define NUM_LBAS 0xE6C980UL (this number must be even,
+                                so if you got, say, 0xE6C981 at the previous step, you can decrease the number to 0xE6C940, for example). Having edited the sources, you need to place the firmware which you want to patch into the patch folder, name it
+                                fw.bin and run build.bat, which will create a modified fw.bin file in patch\bin\. You can now flash this to the USB flash drive. The options Password Patch and No Boot Mode Patch are done in the same way; you can read more
+                                about them on the project’s GitHub. My primary goal was to teach the USB flash drive to perform pre-set actions, which we have accomplished.</p>
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                Result
+                            </a>
+                            <hr>
+                            <br>
+                            <p>We have reached our goal. Moreover, I hope you now understand that USB flash drives (and other USB devices) can no longer be seen simply as a drive that stores your information. In fact, it is almost a computer, which can be
+                                taught to execute specific tasks. Although, PoC has so far only been made available for a specific controller, you can be sure that, as you are reading this article, someone is definitely working on others. So, be careful
+                                when you plug in a USB device and keep your eyes open.
+                            </p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/FinalUSB.jpg   " class="img" alt="blog1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination flex-row">
+                        <a href="./USB-RUBBER-DUCKY.html" class="pages">Preview Page</a>
+                    </div>
+
+                </div>
+
+                <aside class="sidebar">
+                    <div class="category">
+                        <h2>Category</h2>
+                        <ul class="category-list">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                                <a href="#">Android Tricks</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                                <a href="#">Linux</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                                <a href="#">Windows Tricks</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
+                                <a href="#">Networking</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="popular-post">
+                        <h2>Popular Post</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/blog-site/blog-images/Android-Payload.jpg" class="img" alt="blog1">
+                                </div>
+
+                            </div>
+                            <div class="post-title">
+                                <a href="#">
+                                    Make a Persistent payload in Android Using Kali</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="300">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/blog-site/blog-images/top-DDOS.png" class="img" alt="blog1">
+                                </div>
+
+                            </div>
+                            <div class="post-title">
+                                <a href="#">
+                                    Top DDoS Attack Tools</a>
+                            </div>
+                        </div>
+
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/blog-site/blog-images/slowloris.png" class="img" alt="blog1">
+                                </div>
+
+                            </div>
+                            <div class="post-title">
+                                <a href="#">
+                                    DDoS attack using SlowHTTPTest (Slowloris) in Kali Linux</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="500">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/blog-site/blog-images/SSH.jpg" class="img" alt="blog1">
+                                </div>
+
+                            </div>
+                            <div class="post-title">
+                                <a href="#">
+                                    Use SSH Tunnels to Forward Requests & Access Remote Routers</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/blog-site/blog-images/Termux.png" class="img" alt="blog1">
+                                </div>
+
+                            </div>
+                            <div class="post-title">
+                                <a href="./Popular-Post/Termux.html">Termux !! Full Tutorial With Termux commands</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-tags">
+                        <h2>Popular Tags</h2>
+                        <div class="tags flex-row">
+                            <span class="tag" data-aos="flip-up" data-aos-delay="100">Software</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="200">technology</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="300">Programming</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="400">Designing</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Site Content --->
+
+        <!--  Footer -->
+
+        <footer>
+
+            <div class="container-footer-all ">
+
+                <div class="container-body ">
+
+                    <div class="colum1 ">
+                        <h1>This website is for my project and presentation</h1>
+
+                        <p>I just want to let you know that this website is for my project only at ITWS, I am not selling this because what I am selling is myself. But if you want to see the source code visit my github repository just don't be shy </p>
+
+                    </div>
+
+
+                    <div class="colum3 ">
+
+                        <h1>Information Contacts</h1>
+
+                        <div class="row2 ">
+                            <img src="icon/house.png ">
+                            <label>Gen. Ricarte Llanera Nueva Ecija</label>
+                        </div>
+
+                        <div class="row2 ">
+                            <img src="icon/smartphone.png ">
+                            <label>+639777325694</label>
+                        </div>
+
+                        <div class="row2 ">
+                            <img src="icon/contact.png ">
+                            <label>jamerkelly09877@gmail.com</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container-footer ">
+                <div class="footer ">
+                    <div class="copyright ">
+                        | <a href=" ">© 2021</a>
+                    </div>
+                    <div class="move-up ">
+                        <span><i class="fas fa-arrow-circle-up fa-2x "></i></span>
+                    </div>
+                    <div class="information ">
+
+                        <div class="social text-gray ">
+                            <a href="https://facebook.com/jamer055 "><i class="fab fa-facebook-f "></i></a>
+                            <a href="https://instagram.com/jamer05.touppercase ">&nbsp;&nbsp;<i class="fab fa-instagram "></i></a>
+                            <a href="https://github.com/Jamer05 ">&nbsp;&nbsp;&nbsp;<i class="fab fa-github "></i></a>
+                            <a href="https://www.linkedin.com/in/hemerson-ramiro-jr-9b64301a2">&nbsp;&nbsp;&nbsp;<i class="fab fa-linkedin "></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+
+        </footer>
+
+        <!--  Footer -->
+
+        <!-- Jquery Library file -->
+        <script src="./js/Jquery3.4.1.min.js "></script>
+
+        <!-- Owl-Carousel js-->
+        <script src="./js/owl.carousel.min.js "></script>
+
+        <!-- AOS js Library  -->
+        <script src="./js/aos.js "></script>
+
+        <!-- Custom Javascript file -->
+        <script src="./js/main.js "></script>
+</body>
+
+</html>
