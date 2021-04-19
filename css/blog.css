@@ -317,10 +317,6 @@ main .site-content .post-content>.post-image .img {
     transition: all 1s ease;
 }
 
-main .site-content .post-content>.post-image .img:hover {
-    transform: scale(1.3);
-}
-
 main .site-content .post-content>.post-image .post-info span {
     margin: 0 .5rem;
 }

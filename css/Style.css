@@ -103,7 +103,7 @@ p {
 }
 
 .nav .nav__item:hover {
-    color: var(--white);
+    color: white;
 }
 
 .nav__link {
@@ -112,10 +112,6 @@ p {
     color: #f7faff;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-}
-
-.nav__link:hover {
-    color: #f7faff;
 }
 
 
