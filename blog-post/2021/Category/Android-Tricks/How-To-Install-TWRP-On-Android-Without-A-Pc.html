@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/JamerBackground.png">
+    <title>Jamer</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- Custom Style   -->
+    <script src="./js/scripts.js" defer></script>
+    <link rel="stylesheet" href="./css/How-To-Install-TWRP-On-Android-Without-A-Pc.css">
+
+</head>
+
+<body>
+
+    <!--Navigation-->
+
+    <header class="navigation">
+        <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><span class="my-name">Jamer</span></li>
+                <li class="nav__item"><a class="nav__link" href="../../../../index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="../../../../blog.html">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="../../../../contact.html">Contact</a></li>
+                <li class="nav__item"><a class="nav__link" href="../../../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!--Site title-->
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                <h1 style="margin: 30px;">How To Install TWRP On Android Without A Pc</h1>
+
+            </div>
+        </section>
+
+        <!--Site title-->
+
+        <!--Site Content-->
+        <section class="container">
+            <div class="site-content">
+                <div class="posts">
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/TWRP.jpg" class="img" alt="blog1">
+                            </div>
+                            <br>
+                            <p>TWRP is the premiere custom recovery for Android because of how many devices it supports and how simple it is to use. But installing it in the first place hasn’t always been the easiest thing to do — until now. With the help
+                                of a Magisk module, you can finally use one Android device to flash TWRP on another.Google removed Android’s native ability to send ADB and Fastboot commands to other devices in an earlier version, but this mod brings that
+                                functionality back. Developers osm0sis and Surge1223 are the ones who made the magic happen, so big props to them for their work. The initial setup is the longest part of this whole thing, but once that’s done, it’s easy
+                                to maintain in the future.
+                            </p>
+                        </div>
+                        <div class="post-title">
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                What you'll need
+                            </a>
+                            <hr>
+                            <br>
+                            <p>
+                                <li>
+                                    One Android device that was rooted with Magisk (host phone)
+                                </li>
+                            </p>
+                            <p>
+                                <li>
+                                    Another Android device with an unlockable bootloader (target phone)
+                                </li>
+                            </p>
+                            <p>
+                                <li>
+                                    USB data cable or OTG adapter for connecting the devices
+                                </li>
+                            </p>
+                            <p>
+                                <li>
+                                    The main rooted device should have USB OTG support
+                                </li>
+                            </p>
+                            <br>
+                            <br>
+                            <p>You will need two Android devices for this to work, and one should already be rooted. The already-rooted device takes the place of the computer in this instance.</p>
+                            <br>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Step 1. Install ADB & Fastboot for Android
+                            </a>
+                            <p>On the Android device with root access, open Magisk Manager, tap the menu on the left, then go to “Downloads.” Tap the search icon, then type in “adb” to locate the ADB & Fastboot for Android NDK module. Tap the download arrow,
+                                hit “Install,” then tap the “Reboot” button to activate the module.</p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp1.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp2.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp3.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Step 2. Download TWRP for Your Device
+                            </a>
+                            <br><br>
+                            <p>Now you need to grab the TWRP image file for the device you want to install the custom recovery onto. Grab your TWRP image from the link below and save it to the “Download” folder on both devices. Also, rename the file to “twrp”
+                                to make things easier for later on in the guide.</p>
+                            <br><br>
+                            <a href="http://twrp.me/Devices/">
+                                <u>Download Official TWRP Images</u>
+                            </a>
+                            <br><br>
+                            <hr>
+                        </div>
+
+                        <div class="post-title">
+                            <br>
+                            <br>
+                            <br>
+                            <a>
+                                Step 3. Install the Termux App
+                            </a>
+                            <hr>
+                            <br>
+                            <p>To make use of the Magisk module you installed from Step 1, you’ll need to have a terminal app. Termux is one of the best such apps, so hit up the link below to get it installed on your already-rooted device.
+                            </p>
+                        </div>
+                        <div class="post-title">
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Step 4. Enable USB Debugging
+                            </a>
+                            <br><br>
+                            <p>On the target phone, go to Settings –> About Phone and tap “Build Number” 7 times quickly to activate Developer Options. Once done, head to Developer Options either from Settings –> System –> Advanced or from the very bottom
+                                of your Settings app. Finally, enable the “USB Debugging” option.</p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp4.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp5.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+
+                        <div class="post-title">
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Step 5. Connect the 2 Android Devices
+                            </a>
+                            <br><br>
+                            <p>If both phones were made in the last few years, you’ll just need a standard USB C cable to connect them. One with the modern, reversible connector on both sides. But if one or both of the phones has a micro USB port,</p>
+                        </div>
+                        <div class="post-title">
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Step 6. Allow USB Debugging Permission
+                            </a>
+                            <br><br>
+                            <p>Once the two Android devices are connected, the target phone should show a new popup right away. Remove and reconnect the USB cable for the secondary device if this doesn’t happen to try again. Now, tap “Always allow from this
+                                computer,” followed by “OK” to confirm the choice.</p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp6.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp7.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <br>
+                            <a>
+                                Step 7. Grant Root Access
+                            </a>
+                            <hr>
+                            <br>
+                            <p>This will trigger a superuser request from Magisk, which is required when executing higher-level system commands. Tap “Grant” when prompted, then you’re all set here. You’ll need to run the “su” command before sending ADB or
+                                Fastboot commands each time, but you won’t be required to grant the superuser request again.
+                            </p>
+                            <br>
+                            <br>
+                        </div>
+
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp8.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp9.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp10.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <br>
+                            <hr>
+                            <a href="">Step 8. Verify Your Device Connection</a>
+                            <br>
+                            <p>Just because the two devices are connected to one another doesn’t mean they are actually communicating correctly. To check this, type the following command on the rooted device through Termux, then press enter.</p>
+                            <a class="setup">
+                                Command: <h4>$ adb devices</h4>
+                            </a>
+                            <p>The above command will check any connected devices that can communicate via the ADB interface. If everything worked as intended, you should see a device ID under the “List of devices attached” line.</p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp11.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp12.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+
+                        <div class="post-title">
+                            <br>
+                            <hr>
+                            <a href="">Step 9. Boot into Fastboot Mode</a>
+                            <br><br>
+                            <p>Before you can run any Fastboot commands, you’ll need to boot your secondary device into a special mode for this very thing. On the rooted device with Termux, type the following command, then press enter.</p>
+                            <a class="setup">
+                                Command: <h4>$ adb reboot bootloader</h4>
+                            </a>
+                            <br><br>
+                            <p>This will send the secondary device into its native bootloader menu, which is also known as “Fastboot Mode.”</p>
+                        </div>
+
+                        <div class="post-title">
+                            <a href="">Step 10. Locate the TWRP File</a>
+                            <br>
+                            <p>At this point, you’ll need to redirect Termux so that it can locate the twrp.img file you downloaded from Step 2. Using the same rooted device terminal, type the following command, then press enter.</p>
+                            <br>
+                            <hr>
+                            <a class="setup">
+                                Command: <h4>$ cd /sdcard/Download</h4>
+                            </a>
+                            <br><br>
+                            <p>As mentioned, this will redirect the location of the terminal window to the “Download” folder on your rooted device. This is the specific location where the twrp.img file is, so you need to make sure you enter the command exactly
+                                as it appears.</p>
+                        </div>
+
+                        <div class="post-title">
+                            <a href="">Step 11. Check Your Partition Layout</a>
+                            <br>
+                            <p>Now it’s time to send over the twrp.img file to the secondary device so you can get TWRP installed onto it. But the instructions are different depending on whether or not the target phone supports Android 7.0’s A/B partition
+                                layout.
+                            </p>
+                            <br>
+                            <br><br>
+                            <p>So first, if you’re not sure whether the phone you want to install TWRP on has A/B partitions, install Treble Check from the Play Store. Open the app and it will say either “Unsupported” or “Supported” in the Seamless System
+                                Updates section. If your phone is supported, you have A/B partitions and should follow the corresponding instructions in the next step.
+
+                            </p>
+                        </div>
+
+
+                        <div class="post-title">
+                            <br>
+                            <hr>
+                            <a href="">Step 12. Install TWRP</a>
+                            <br><br>
+                            <p>If you have an A/B partition target device, open the Termux app on the host device and type the following command, then press enter.</p>
+                            <a class="setup">
+                                Command: <h4>$ fastboot boot twrp.img</h4>
+                            </a>
+                            <br><br>
+                            <p>This will send the secondary device into its native bootloader menu, which is also known as “Fastboot Mode.”</p>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp13.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp14.jpg" class="img" alt="blog1">
+
+                            </div>
+
+                        </div>
+                        <div class="post-title">
+                            <br>
+                            <hr>
+                            <p>This will temporarily boot TWRP onto the secondary device; however, you’ll still need to run the permanent installer after that. If you don’t do this, TWRP will disappear after you reboot your device. So tap “Install,” browse
+                                to the Download folder, then press the “Install Image” button. Tap the twrp.img file, select “Install Recovery Ramdisk,” then swipe the slider to begin. Once the process is finished, press the home button, go to “Reboot,”
+                                then “Recovery,” where you’ll be greeted by the permanent version of TWRP!</p>
+                            <br><br>
+                        </div>
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/blog-site/blog-images/twrp15.jpg" class="img" alt="blog1">
+                                <img src="./assets/blog-site/blog-images/twrp16.jpg" class="img" alt="blog1">
+                                <img src="./assets/blog-site/blog-images/twrp17.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <br>
+                            <hr>
+                            <p>Depending on your version of TWRP, your options might differ slightly when installing an image file. Just look for something related to “Install Image” or “Recovery Ramdisk” and install it using that option. If the target phone
+                                does not have A/B partitions, open Termux on the rooted device and type the following command, then press enter.
+                            </p>
+                            <br>
+                            <br>
+                            <a class="setup">
+                                Command: <h4>$ fastboot flash recovery twrp.img</h4>
+                            </a>
+                            <br>
+                            <p>This command will permanently install TWRP onto your device without any extra work on your part due to how devices with an “A-only” partition layout work. The final thing you need to do is type the following command, then press
+                                enter.
+                            </p>
+                            <br>
+                            <a class="setup">
+                                Command: <h4>$ adb reboot recovery</h4>
+                            </a><br>
+                            <p>At this point, your secondary device will now reboot to the TWRP main menu automatically. You can safely remove the USB cable or OTG adapter now. You’ve successfully installed TWRP and can do anything you want using the popular
+                                custom recovery without being tied to a computer.</p>
+                            <br><br>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="pagination flex-row">
+                        <a href="../../Android-Tricks.html" class="pages">Back</a>
+
+                    </div>
+                </div>
+
+                <!---->
+                <aside class="sidebar">
+                    <div class="category">
+                        <h2>Category</h2>
+                        <ul class="category-list">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                                <a href="#">Android Tricks</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                                <a href="../../Kali-Linux.html">Kali Linux</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                                <a href="../../Windows-Tricks.html">Windows Tricks</a>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
+                                <a href="#">Networking</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="popular-post">
+                        <h2>Popular Post</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/blog-site/blog-images/Termux.png" class="img" alt="blog1">
+                                </div>
+
+                            </div>
+                            <div class="post-title">
+                                <a href="../../Popular-Post/Termux.html">Termux !! Full Tutorial With Termux commands</a>
+                            </div>
+
+                            <div class="post-content" data-aos="flip-up" data-aos-delay="300">
+                                <div class="post-image">
+                                    <div>
+                                        <img src="./assets/blog-site/blog-images/top-DDOS.png" class="img" alt="blog1">
+                                    </div>
+
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">
+                                    Top DDoS Attack Tools</a>
+                                </div>
+                            </div>
+
+                            <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                                <div class="post-image">
+                                    <div>
+                                        <img src="./assets/blog-site/blog-images/slowloris.png" class="img" alt="blog1">
+                                    </div>
+
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">
+                                    DDoS attack using SlowHTTPTest (Slowloris) in Kali Linux</a>
+                                </div>
+                            </div>
+                            <div class="post-content" data-aos="flip-up" data-aos-delay="500">
+                                <div class="post-image">
+                                    <div>
+                                        <img src="./assets/blog-site/blog-images/SSH.jpg" class="img" alt="blog1">
+                                    </div>
+
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">
+                                    Use SSH Tunnels to Forward Requests & Access Remote Routers</a>
+                                </div>
+                            </div>
+                            <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+
+                                <div class="post-image">
+                                    <div>
+                                        <img src="./assets/blog-site/blog-images/Android-Payload.jpg" class="img" alt="blog1">
+                                    </div>
+
+                                </div>
+                                <div class="post-title">
+                                    <a href="#">
+                                    Make a Persistent payload in Android Using Kali</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-tags">
+                        <h2>Popular Tags</h2>
+                        <div class="tags flex-row">
+                            <span class="tag" data-aos="flip-up" data-aos-delay="100">Software</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="200">technology</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="300">Programming</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="400">Designing</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!--Site Content-->
+
+        <!--Footer-->
+        <footer>
+
+            <div class="container-footer-all ">
+
+                <div class="container-body ">
+
+                    <div class="colum1 ">
+                        <h1>This website is for my project and presentation</h1>
+
+                        <p>I just want to let you know that this website is for my project only at ITWS, I am not selling this because what I am selling is myself. But if you want to see the source code visit my github repository just don't be shy </p>
+
+                    </div>
+
+
+                    <div class="colum3 ">
+
+                        <h1>Information Contacts</h1>
+
+                        <div class="row2 ">
+                            <img src="icon/house.png ">
+                            <label>Gen. Ricarte Llanera Nueva Ecija</label>
+                        </div>
+
+                        <div class="row2 ">
+                            <img src="icon/smartphone.png ">
+                            <label>+639777325694</label>
+                        </div>
+
+                        <div class="row2 ">
+                            <img src="icon/contact.png ">
+                            <label>jamerkelly09877@gmail.com</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container-footer ">
+                <div class="footer ">
+                    <div class="copyright ">
+                        | <a href=" ">© 2021</a>
+                    </div>
+                    <div class="move-up ">
+                        <span><i class="fas fa-arrow-circle-up fa-2x "></i></span>
+                    </div>
+                    <div class="information ">
+
+                        <div class="social text-gray ">
+                            <a href="https://facebook.com/jamer055 "><i class="fab fa-facebook-f "></i></a>
+                            <a href="https://instagram.com/jamer05.touppercase ">&nbsp;&nbsp;<i class="fab fa-instagram "></i></a>
+                            <a href="https://github.com/Jamer05 ">&nbsp;&nbsp;&nbsp;<i class="fab fa-github "></i></a>
+                            <a href="https://www.linkedin.com/in/hemerson-ramiro-jr-9b64301a2">&nbsp;&nbsp;&nbsp;<i class="fab fa-linkedin "></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+
+        </footer>
+
+        <!--Footer-->
+
+        <!-- Jquery Library file -->
+        <script src="./js/Jquery3.4.1.min.js "></script>
+
+        <!-- --------- Owl-Carousel js ------------------->
+        <script src="./js/owl.carousel.min.js "></script>
+
+        <!-- ------------ AOS js Library  ------------------------- -->
+        <script src="./js/aos.js "></script>
+
+        <!-- Custom Javascript file -->
+        <script src="./js/main.js "></script>
+</body>
+
+</html>
