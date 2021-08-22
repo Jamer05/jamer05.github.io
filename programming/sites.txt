@@ -1,4 +1,4 @@
-🔰 Top learning websites 🔰
+ Top learning websites 
 1. www.codecademy.com 
 2. www.lynda.com 
 3. www.udemy.com 
@@ -46,3 +46,434 @@
 45. www.professormesser.com .
 46. www.freecodecamp.org
 47. http://geekforgeeks.org
+
+E-Books : 
+https://forcoder.su/
+https://forum.mobilism.org/viewforum.php?f=106
+http://www.freebookspot.es/
+https://textbooknova.com/
+http://www.gutenberg.org/
+https://manybooks.net/
+https://oll.libertyfund.org/
+http://ishare.iask.sina.com.cn/
+https://archive.org/details/texts
+https://libgen.fun/
+https://z-lib.org/
+https://www.pdfdrive.com/
+[Best one for books]
+https://the-eye.eu/public/Books/
+
+
+Some Useful Websites that you should must use
+
+1. Screenr.com: This website helps you Record movies on your computer and send them straight to YouTube.
+2. Bounceapp.com: For capturing full length screenshots of a web pages.
+3. Goo.gl: Shorten long URLs and convert URLs into QR codes.
+4. untiny.me: Find the original URLs that's hiding behind a short URLs.
+5. localti.me: Know more than just the local time of a city
+6. copypastecharacter.com: Copy-paste special characters that are not on your keyboard.
+7. topsy.com: A better search engine for twitter.
+8. fb.me/AppStore: Search iOS apps without launching iTunes.
+9. iconfinder.com: The best place to find icons of all sizes.
+10. office.com: Download templates, clipart and images for your Office documents.
+11. woorank.com: everything you wanted to know about a website.
+12. virustotal.com: Scan any suspicious file or email attachment for viruses.
+13. wolframalpha.com: Gets answers directly without searching .
+14. printwhatyoulike.com: Print web pages without the clutter.
+15. joliprint.com: Reformats news articles and blog content as a newspaper.
+16. isnsfw.com: When you wish to share a NSFW page but with a warning.
+17. eggtimer.com: A simple online timer for your daily needs.
+18. coralcdn.org: If a site is down due to heavy traffic, try accessing it through coral CDN.
+19. random.org: Pick random numbers, flip coins, and more.
+20. mywot.com: Check the trust level of any website .
+21. viewer.zoho.com: Preview PDFs and Presentations directly in the browser.
+22. tubemogul.com: Simultaneously upload videos to YouTube and other video sites.
+23. truveo.com: The best place for
+searching web videos.
+24. scr.im: Share your email address online without worrying about spam.
+25. spypig.com: Now get read receipts for your email.
+26. sizeasy.com: Visualize and compare the size of any product.
+27. whatfontis.com: quickly determine the font name from an image.
+28. fontsquirrel.com: A good collection of fonts free for personal and commercial use.
+29. regex.info: Find data hidden in your photographs .
+30. tineye.com: This is like an online version of Google Googles.
+31. iwantmyname.com: Helps you search domains across allTLDs.
+32. tabbloid.com: Your favorite blogs delivered as PDFs.
+33. join.me: Share your screen with anyone over the web.
+34. onlineocr.net: Recognize text from scanned PDFs and images “ see other OCR tools.
+35. flightstats.com: Track flight status at airports worldwide.
+36. wetransfer.com: For sharing really big files online.
+37. pastebin.com: A temporary online clipboard for your text and code snippets.
+38. polishmywriting.com: Check your writing for spelling or grammatical errors.
+39. awesomehighlighter.com: Easily highlight the important parts of a web page.
+40. typewith.me: Work on the same document with multiple people.
+41. whichdateworks.com: Planning an event? Find a date that works for all.
+42. everytimezone.com: A less confusing view of the world time zones.
+43. warrick.cs.odu.edu: You'll need this when your bookmarked web pages are deleted.
+44. gtmetrix.com: The perfect tool for measuring your site performance online.
+45. imo.im: Chat with your buddies on Skype,Facebook, GoogleTalk, etc from one place.
+46. translate.google.com: Translate web pages,PDFs and Office documents.
+47. youtube.com/leanback: Sit back and enjoy YouTube videos in full-screen mode.
+48. similarsites.com: Discover new sites that are similar to what you like already.
+49. wordle.net: Quick summarize long pieces of text with tag clouds.
+50. bubbl.us: Create mind-maps, brainstorm ideas in the browser.
+51. kuler.adobe.com: Get color ideas, also extract colors from photographs.
+52. followupthen.com: Setup quick reminders via email itself.
+53. lmgtfy.com: When your friends are too lazy to use Google on their own.
+54. tempalias.com: Generate temporary email aliases, better than disposable email.
+50 Great Websites For Web Developers - 
+
+
+50 Great Websites For Web Developers - 
+
+1. Hidden Tools -
+https://hiddentools.dev/
+
+2. Music For Programming -
+https://musicforprogramming.net/
+
+3. Programming Language Convertor -
+https://ide.onelang.io/
+
+4. HTTP Cat -
+https://http.cat/
+
+5. Iconscout -
+https://iconscout.com/
+
+6. CSS Zen Garden -
+http://www.csszengarden.com/
+
+7. A List Apart -
+https://alistapart.com/
+
+8. Code Project -
+https://www.codeproject.com/
+
+9. Scotch -
+https://scotch.io/
+
+10. TutsPlus -
+https://tutsplus.com/
+
+11. Creative Blog -
+https://www.creativebloq.com/
+
+12. Codrops -
+https://tympanus.net/codrops/
+
+13. MDN Web Docs -
+https://developer.mozilla.org/zh-CN/
+
+14. The Odin Project -
+https://www.theodinproject.com/
+
+15. Code Wars -
+https://www.codewars.com/
+
+16. WpSessions -
+https://wpsessions.com/
+
+17. CSS Autor -
+https://cssauthor.com/
+
+18. Laracasts -
+https://laracasts.com/
+
+19. Web Design News -
+https://www.webdesignernews.com/
+
+20. UX Movement -
+https://uxmovement.com/
+
+21. Gradient Magic -
+https://www.gradientmagic.com/
+
+22. Trianglify - 
+https://trianglify.io/
+
+23. CSS Tricks -
+https://css-tricks.com/
+
+24. Free Frontend -
+https://freefrontend.com/
+
+25. Code My UI -
+https://codemyui.com/
+
+26. CSS Reference -
+https://cssreference.io/
+
+27. HTML Reference -
+https://htmlreference.io/
+
+28. Frontend Mentor -
+https://www.frontendmentor.io/
+29. Site Point -
+https://www.sitepoint.com/
+
+30. Free CSS -
+https://www.free-css.com/
+
+31. Awesome Python -
+https://pythonawesome.com/
+
+32. Fun JavaScript Projects -
+https://fun-javascript-projects.com/
+
+33. Daily Dev -
+https://daily.dev/
+
+34. Dev Docs -
+https://devdocs.io/
+
+35. ShortCode Dev -
+https://shortcode.dev/
+
+36. What Runs -
+https://www.whatruns.com/
+
+37. 1LOC -
+https://1loc.dev/
+
+38. Web Code Tools -
+https://webcode.tools/
+
+39. Am i Responsive -
+http://ami.responsivedesign.is/
+
+40. Shape Divider - 
+https://www.shapedivider.app/
+
+41. Fancy Border Radius -
+https://9elements.github.io/fancy-border-radius/
+
+42. CSS Gradient -
+https://cssgradient.io/
+
+43. CSS Clip Path -
+https://bennettfeely.com/clippy/
+
+44. CSS Layout -
+https://csslayout.io/
+
+45. 30 Seconds Of Code -
+https://www.30secondsofcode.org/
+
+46. Undraw -
+https://undraw.co/
+
+47. Humaaans -
+https://www.humaaans.com/
+
+48. W3 Layouts -
+https://w3layouts.com/
+
+49. Templatemo -
+https://templatemo.com/
+
+50. Tooplate -
+https://www.tooplate.com/
+
+WRITE CSS FASTER WITH THESE CSS GENERATORS
+
+01 - ENJOY CSS
+https://enjoycss.com/
+
+02 - CSS ARROW PLEASE
+https://cssarrowplease.com/
+
+03 - FANCY BORDER RADIUS
+https://9elements.github.io/fancy-border-radius/
+
+04 - CUBIC BEZIER
+https://cubic-bezier.com/
+
+05 - CSS BUTTON GENERATOR
+https://cssbuttongenerator.com/
+
+06 - KEYFRAMES.APP
+https://keyframes.app/
+
+07 - CSS CLIP-PATH MAKER
+https://bennettfeely.com/clippy/
+
+08 - LAYOUTIT!
+https://grid.layoutit.com/
+
+Remote jobs are waiting for you:wink:
+
+➳ flexjobs.com
+➳ whoishiring.io
+➳ remoteml.com
+➳ freelancer.com
+➳ simplyhired.com
+➳ freshersworld.com
+➳ weworkremotely.com
+➳ upwork.com
+➳ remoteok.io
+➳ devsnap.io
+➳ remote.co
+➳ dice.com
+➳ angel.co
+
+7 BEST WEBSITES TO GET HTML & CSS CODE SNIPPETS 
+
+1- CSS DECK
+https://cssdeck.com/
+
+2- CODEPAD
+https://codepad.co/
+
+3- CODEPEN
+https://codepen.io/trending
+
+4- CODEMYUI
+https://codemyui.com/
+
+5- CSS-TRICKS SNIPPETS
+https://css-tricks.com/snippets/
+
+6- FREEFRONTEND
+https://freefrontend.com/
+
+7- LITTLESNIPPETS
+https://www.littlesnippets.net/
+
+10 Sites for Interview Preparation
+
+1. Ambitionbox
+2. AceThelnterview
+3. Geeksforgeeks
+4. Leetcode
+5. Gainlo
+6. Careercup
+7. Codercareer
+8. InterviewUp
+9. InterviewBest
+10. Indiabix
+
+10 Sites to learn Excel for free
+
+1. Microsoft Excel Help Center
+2. Excel Exposure
+3. Chandoo
+4. Excel Central
+5. Contextures
+6. Excel Hero b.
+7. Mr. Excel
+8. Improve Your Excel
+9. Excel Easy
+10. Excel Jet
+
+11 Sites for Free Online Education
+
+1. Coursera
+2. edX
+3. Khan Academy
+4. Udemy
+5. iTunesU Free Courses
+6. MIT OpenCourseWare
+7. Stanford Online
+8. Codecademy
+9. ict iitr
+10 ict iitk
+11 NPTEL
+
+5 Useful Resources for Junior Web Developers 
+
+1. Diagrams -  This is such a great web for draw a lot of diagrams you need. I use it for my databases as long as I need to share with my peers.
+Visit : https://app.diagrams.net/
+
+2. CSS Section Generator - If you want to take your website design to another level, this separator generator allows you to create different sections for your web.
+Visit : https://wweb.dev/resources/css-separator-generator
+
+3. Grid by example - The perfect place if you need to understand how grid layout works.
+Visit : https://gridbyexample.com/
+
+4. JSFiddle - If you need to test your code and you don't want to open VS Code, JSFiddle brings you the possibility to use an online editor.
+Visit : https://jsfiddle.net/
+
+5. Sweet Alerts - A beautiful tool for replacement alerts. It's a npm pakage so you need to install it as a dependencie.
+Visit : https://sweetalert.js.org/
+
+List of Websites Giving free RDP/VPS 
+
+ http://vpswala.org/
+ http://ohosti.com/vpshosting.php
+ https://gratisvps.net/
+ https://my.letscloud.io/sign-up/
+ https://developer.rackspace.com/
+ https://www.vultr.com/
+ https://www.ionos.com/
+ https://www.cloudsigma.com/
+ https://www.digitalocean.com/
+ http://ezywatch.com/freevps/
+ https://yellowcircle.net/
+ https://www.ctl.io/free-trial/
+ https://www.ihor.ru/
+ https://www.neuprime.com/l_vds3.php
+ https://www.skysilk.com/
+ https://sadd.io/
+ https://www.apponfly.com/en
+
+Mock Tools :
+(Work with the designer team to understand how your idea will look like)
+
+:writing_hand:https://figma.com/
+:writing_hand:https://zeplin.com/
+
+Project Design Ideas:
+
+https://awwwards.com/website
+https://arrival.com/
+
+General Tools:
+
+https://emailjs.com/
+https://caniuse.com/
+https://imagecompressor.com/
+https://css.tricks/
+
+The Ultimate List Of Sites With Free Stock Photos
+
+https://visualhunt.com/
+https://unsplash.com/
+https://www.pexels.com/
+https://pixabay.com/
+http://www.freeimages.com/
+http://images.superfamous.com/
+https://picjumbo.com/
+http://imcreator.com/free
+http://gratisography.com/
+https://morguefile.com/
+http://littlevisuals.co/
+http://nos.twnsnd.co/
+http://getrefe.com/
+http://jaymantri.com/
+http://publicdomainarchive.com/
+http://magdeleine.co/
+http://libreshot.com/
+http://kaboompics.com/
+http://photos.bucketlistly.com/
+http://travelcoffeebook.com/
+https://foodiesfeed.com/
+http://cupcake.nilssonlee.se/
+http://moveast.me/
+http://stokpic.com/
+https://www.splitshire.com/
+http://snapwiresnaps.tumblr.com/
+https://stocksnap.io/
+
+Some miscellaneous resources for developers:point_down:
+
+➛ color.hailpixel.com
+➛ favicon.cc
+➛ freepik.com
+➛ patternico.com
+➛ app.diagrams.net
+➛ devdocs.io
+➛ resumake.io
+➛ webcode.tools
+➛ layoutit.com
+➛ devhints.io
