@@ -7,5 +7,5 @@ Hacking:
 
 https://www.jamer05.me/hacking/Pentesting.pdf
 https://www.jamer05.me/hacking/BH_Python.pdf
-https://www.jamer05.me/hacking/Linux.pdf
+https://www.jamer05.me/hacking/Linux_Basics.pdf
 
