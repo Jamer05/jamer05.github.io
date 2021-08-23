@@ -1,5 +1,5 @@
 Programming:
-<<<<<<< HEAD
+
 https://www.jamer05.me/programming/DSA_Python.pdf
 https://www.jamer05.me/programming/DSA_Java.pdf
 
@@ -8,14 +8,4 @@ Hacking:
 https://www.jamer05.me/hacking/Pentesting.pdf
 https://www.jamer05.me/hacking/BH_Python.pdf
 https://www.jamer05.me/hacking/Linux.pdf
-=======
 
-DSA_Python.pdf
-DSA_Java.pdf
-
-Hacking:
-
-Pentesting.pdf
-BH_Python.pdf
-Linux.pdf
->>>>>>> 3eaa02953515737bc5016dec02bccd4bd469c43e
