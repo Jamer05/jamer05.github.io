@@ -4,7 +4,7 @@ version: 2.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
-  say-hello:
+  good-bye:
     # Specify the execution environment.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
@@ -14,11 +14,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: "My Last update"
+          command: "echo This is the last working flow for this site, thanks for the support I'll be back after 10 years"
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   say-hello-workflow:
     jobs:
-      - This is the last work flow of this project thanks for the support.
+      - good-bye
