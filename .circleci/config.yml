@@ -21,4 +21,4 @@ jobs:
 workflows:
   good-bye-workflow:
     jobs:
-      - good-bye
+      - good-bye 
